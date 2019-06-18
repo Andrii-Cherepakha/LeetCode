@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Arrays\ArrayHelper.cs" />
     <Compile Include="Arrays\1_TwoSum.cs" />
+    <Compile Include="JustTest.cs" />
     <Compile Include="LinkedList\203_RemoveLinkedListElements.cs" />
     <Compile Include="LinkedList\LinkedListHelper.cs" />
     <Compile Include="LinkedList\ListNode.cs" />
@@ -57,9 +58,12 @@
     <Compile Include="Arrays\80_RemoveDuplicatesFromSortedArray2.cs" />
     <Compile Include="Arrays\27_RemoveElement.cs" />
     <Compile Include="Arrays\WiggleSortII.cs" />
-    <Compile Include="Trees\222_CountCompleteTreeNodes.cs" />
-    <Compile Include="Trees\222_CountCompleteTreeNodesSolution.cs" />
-    <Compile Include="Trees\222_CountCompleteTreeNodesMy.cs" />
+    <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesDraft.cs" />
+    <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesRecursive.cs" />
+    <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesShift.cs" />
+    <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesTests.cs" />
+    <Compile Include="Trees\222_CountCompleteTreeNodes\ICountCompleteTreeNodes.cs" />
+    <Compile Include="Trees\TreeNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

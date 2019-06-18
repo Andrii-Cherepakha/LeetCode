@@ -1,117 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using NUnit.Framework;
 
-namespace LeetCode.Trees
+namespace LeetCode.Trees._222_CountCompleteTreeNodes
 {
 
-    public class CountCompleteTreeNodes
+    public class CountCompleteTreeNodesDraft
     {
-        [Test]
-        public void TestNull()
-        {
-            var cnt = CountNodes(null);
-            Console.WriteLine(cnt);
-            Assert.That(cnt, Is.EqualTo(0));
-        }
-
-        [Test]
-        public void TestOneNode()
-        {
-            var root = new TreeNode(1);
-            var cnt = CountNodes(root);
-            Console.WriteLine(cnt);
-            Assert.That(cnt, Is.EqualTo(1));
-        }
-        
-        [Test]
-        public void TestTwoLevels1()
-        {
-            var root = new TreeNode(1);
-            root.left = new TreeNode(2);
-
-            var cnt = CountNodes(root);
-            Console.WriteLine(cnt);
-            Assert.That(cnt, Is.EqualTo(2));
-        }
-
-        [Test]
-        public void TestTwoLevels2()
-        {
-            var root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
-
-            var cnt = CountNodes(root);
-            Console.WriteLine(cnt);
-            Assert.That(cnt, Is.EqualTo(3));
-        }
-
-        [Test]
-        public void TestThreeLevels4()
-        {
-            var root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
-
-            root.left.left = new TreeNode(4);
-
-            var cnt = CountNodes(root);
-            Console.WriteLine(cnt);
-            Assert.That(cnt, Is.EqualTo(4));
-        }
-
-        [Test]
-        public void TestThreeLevels5()
-        {
-            var root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
-
-            root.left.left = new TreeNode(4);
-            root.left.right = new TreeNode(5);
-
-            var cnt = CountNodes(root);
-            Console.WriteLine(cnt);
-            Assert.That(cnt, Is.EqualTo(5));
-        }
-
-        [Test]
-        public void TestThreeLevels6()
-        {
-            var root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
-
-            root.left.left = new TreeNode(4);
-            root.left.right = new TreeNode(5);
-
-            root.right.left = new TreeNode(6);
-
-            var cnt = CountNodes(root);
-            Console.WriteLine(cnt);
-            Assert.That(cnt, Is.EqualTo(6));
-        }
-
-        [Test]
-        public void TestThreeLevels7()
-        {
-            var root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
-
-            root.left.left = new TreeNode(4);
-            root.left.right = new TreeNode(5);
-
-            root.right.left = new TreeNode(6);
-            root.right.right = new TreeNode(7);
-
-            var cnt = CountNodes(root);
-            Console.WriteLine(cnt);
-            Assert.That(cnt, Is.EqualTo(7));
-        }
-
-
         public int CountNodes(TreeNode root) // correct but bad memory usage
         {
             _leavesNum = 0;
@@ -331,18 +225,6 @@ namespace LeetCode.Trees
             }
 
             return count;
-        }
-    }
-
-    public class TreeNode
-    {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode(int x)
-        {
-            val = x;
         }
     }
 }
