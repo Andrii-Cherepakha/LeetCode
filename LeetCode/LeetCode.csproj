@@ -51,6 +51,7 @@
     <Compile Include="Arrays\1_TwoSum.cs" />
     <Compile Include="JustTest.cs" />
     <Compile Include="LinkedList\203_RemoveLinkedListElements.cs" />
+    <Compile Include="LinkedList\2_AddTwoNumbersSolution.cs" />
     <Compile Include="LinkedList\LinkedListHelper.cs" />
     <Compile Include="LinkedList\ListNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
