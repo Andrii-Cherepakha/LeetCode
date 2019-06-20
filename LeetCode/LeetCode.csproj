@@ -59,6 +59,9 @@
     <Compile Include="Arrays\80_RemoveDuplicatesFromSortedArray2.cs" />
     <Compile Include="Arrays\27_RemoveElement.cs" />
     <Compile Include="Arrays\WiggleSortII.cs" />
+    <Compile Include="Strings\8_StringToInteger.cs" />
+    <Compile Include="Strings\8_StringToIntegerTests.cs" />
+    <Compile Include="Strings\8_StringToIntegerSimplified.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesDraft.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesRecursive.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesShift.cs" />
