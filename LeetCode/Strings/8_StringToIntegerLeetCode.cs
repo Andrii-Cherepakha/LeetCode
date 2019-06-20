@@ -1,6 +1,6 @@
 ﻿namespace LeetCode.Strings
 {
-    public class StringToIntegerSimplified
+    public class StringToIntegerLeetCode
     {
         public int MyAtoi(string str)
         {

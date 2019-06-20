@@ -6,7 +6,7 @@ namespace LeetCode.Strings
     public class StringToIntegerTests
     {
         //private StringToInteger _solution = new StringToInteger();
-        private StringToIntegerSimplified _solution = new StringToIntegerSimplified();
+        private StringToIntegerLeetCode _solution = new StringToIntegerLeetCode();
 
         [Test]
         public void Test42()

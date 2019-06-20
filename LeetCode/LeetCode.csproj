@@ -49,6 +49,10 @@
   <ItemGroup>
     <Compile Include="Arrays\ArrayHelper.cs" />
     <Compile Include="Arrays\1_TwoSum.cs" />
+    <Compile Include="Integers\9_PalindromeNumberString.cs" />
+    <Compile Include="Integers\9_PalindromeNumber.cs" />
+    <Compile Include="Integers\9_PalindromeNumberTests.cs" />
+    <Compile Include="Integers\PalindromeNumberLeetCode.cs" />
     <Compile Include="JustTest.cs" />
     <Compile Include="LinkedList\203_RemoveLinkedListElements.cs" />
     <Compile Include="LinkedList\2_AddTwoNumbersSolution.cs" />
@@ -61,7 +65,7 @@
     <Compile Include="Arrays\WiggleSortII.cs" />
     <Compile Include="Strings\8_StringToInteger.cs" />
     <Compile Include="Strings\8_StringToIntegerTests.cs" />
-    <Compile Include="Strings\8_StringToIntegerSimplified.cs" />
+    <Compile Include="Strings\8_StringToIntegerLeetCode.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesDraft.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesRecursive.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesShift.cs" />
