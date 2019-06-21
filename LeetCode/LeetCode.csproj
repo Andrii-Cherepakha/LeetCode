@@ -54,6 +54,9 @@
     <Compile Include="Integers\9_PalindromeNumber.cs" />
     <Compile Include="Integers\9_PalindromeNumberTests.cs" />
     <Compile Include="Integers\9_PalindromeNumberLeetCode.cs" />
+    <Compile Include="Integers\13_RomanToIntegerRecursion.cs" />
+    <Compile Include="Integers\13_RomanToIntegerTests.cs" />
+    <Compile Include="Integers\13_RomanToIntegerLinear.cs" />
     <Compile Include="JustTest.cs" />
     <Compile Include="LinkedList\203_RemoveLinkedListElements.cs" />
     <Compile Include="LinkedList\2_AddTwoNumbersSolution.cs" />
