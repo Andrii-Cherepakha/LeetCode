@@ -58,7 +58,7 @@ namespace LeetCode.Arrays
 
                 if (height[i] < height[j])
                 {
-                    // left line is lower than rigth line => go to the right
+                    // left line is lower than right line => go to the right
                     i++;
                 }
                 else

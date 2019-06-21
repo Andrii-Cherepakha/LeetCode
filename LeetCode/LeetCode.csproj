@@ -53,7 +53,7 @@
     <Compile Include="Integers\9_PalindromeNumberString.cs" />
     <Compile Include="Integers\9_PalindromeNumber.cs" />
     <Compile Include="Integers\9_PalindromeNumberTests.cs" />
-    <Compile Include="Integers\PalindromeNumberLeetCode.cs" />
+    <Compile Include="Integers\9_PalindromeNumberLeetCode.cs" />
     <Compile Include="JustTest.cs" />
     <Compile Include="LinkedList\203_RemoveLinkedListElements.cs" />
     <Compile Include="LinkedList\2_AddTwoNumbersSolution.cs" />
