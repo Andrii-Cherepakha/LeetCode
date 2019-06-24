@@ -67,6 +67,7 @@
     <Compile Include="LinkedList\203_RemoveLinkedListElements.cs" />
     <Compile Include="LinkedList\2_AddTwoNumbersSolution.cs" />
     <Compile Include="LinkedList\141_LinkedListCycle.cs" />
+    <Compile Include="LinkedList\142_LinkedListCycleII.cs" />
     <Compile Include="LinkedList\LinkedListHelper.cs" />
     <Compile Include="LinkedList\ListNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
