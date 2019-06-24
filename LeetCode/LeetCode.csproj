@@ -62,6 +62,7 @@
     <Compile Include="Integers\15_SumOfTree.cs" />
     <Compile Include="Integers\15_SumOfTreeTests.cs" />
     <Compile Include="Integers\15_SumOfTreeNN.cs" />
+    <Compile Include="Integers\202_HappyNumber.cs" />
     <Compile Include="JustTest.cs" />
     <Compile Include="LinkedList\203_RemoveLinkedListElements.cs" />
     <Compile Include="LinkedList\2_AddTwoNumbersSolution.cs" />
