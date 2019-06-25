@@ -167,7 +167,60 @@ namespace LeetCode.LinkedList
             Assert.That(actual, Is.EqualTo(expected));
         }
 
-        public ListNode DetectCycle(ListNode head)
+        public ListNode DetectCycleBrent(ListNode head) // Brent's
+        {
+            if (head == null || head.next == null)
+            {
+                return null; // no cycle
+            }
+
+            // 1. find length of the loop
+            int power = 1;
+            int lam = 1; // lambda, length of the loop
+
+            ListNode tortoise = head;
+            ListNode hare = head.next;
+            while (tortoise != hare)
+            {
+                if (power == lam) // time to start a new power of two?
+                {
+                    tortoise = hare;
+                    power = power * 2;
+                    lam = 0;
+                }
+
+                if (hare.next == null)
+                {
+                    return null; // no cycle
+                }
+
+                hare = hare.next;
+                lam = lam + 1;
+            }
+
+            // 2. move hare to C (meet point)
+            tortoise = head;
+            hare = head;
+            int i = 0;
+            while (i != lam)
+            {
+                hare = hare.next;
+                i++;
+            }
+
+            // 3. meet at start of the loop
+            int mu = 0;
+            while (tortoise != hare)
+            {
+                tortoise = tortoise.next;
+                hare = hare.next;
+                mu++;
+            }
+
+            return tortoise;
+        }
+
+        public ListNode DetectCycle(ListNode head) // Floyd
         {
             ListNode slow = head;
             ListNode fast = head;
