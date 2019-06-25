@@ -52,6 +52,7 @@
     <Compile Include="Arrays\11_ContainerWithMostWater.cs" />
     <Compile Include="Arrays\41_FirstMissingPositiveSolution.cs" />
     <Compile Include="Arrays\287_FindDuplicateNumber.cs" />
+    <Compile Include="Arrays\268_FindMissingNumber.cs" />
     <Compile Include="Integers\9_PalindromeNumberString.cs" />
     <Compile Include="Integers\9_PalindromeNumber.cs" />
     <Compile Include="Integers\9_PalindromeNumberTests.cs" />
