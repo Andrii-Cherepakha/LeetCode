@@ -1,5 +1,6 @@
 ﻿–2147483648
  2147483647
 
-12 Integer to Roman
-29 Divide Two Integers
+ 12 Integer to Roman
+ 29 Divide Two Integers
+287 Find the Duplicate Number - not easy to understand that need to apply the Cycle detection solution

@@ -33,7 +33,8 @@ namespace LeetCode.Arrays
             do
             {
                 tortoise = nums[tortoise];
-                hare = nums[nums[hare]];
+                hare = nums[hare];
+                hare = nums[hare];
             } while (tortoise != hare);
 
             // Find the "entrance" to the cycle.
