@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 
 namespace LeetCode.LinkedList
 {
@@ -15,5 +16,13 @@ namespace LeetCode.LinkedList
             }
         }
 
+        public static void CheckSorted(ListNode head)
+        {
+            while (head != null && head.next != null)
+            {
+                Assert.That(head.val <= head.next.val);
+                head = head.next;
+            }
+        }
     }
 }

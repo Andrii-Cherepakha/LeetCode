@@ -72,6 +72,7 @@
     <Compile Include="LinkedList\142_LinkedListCycleII.cs" />
     <Compile Include="LinkedList\LinkedListHelper.cs" />
     <Compile Include="LinkedList\ListNode.cs" />
+    <Compile Include="LinkedList\21_MergeTwoSortedLists.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Arrays\26_RemoveDuplicatesFromSortedArray.cs" />
     <Compile Include="Arrays\80_RemoveDuplicatesFromSortedArray2.cs" />
