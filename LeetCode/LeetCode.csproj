@@ -74,6 +74,7 @@
     <Compile Include="LinkedList\ListNode.cs" />
     <Compile Include="LinkedList\21_MergeTwoSortedLists.cs" />
     <Compile Include="LinkedList\19_RemoveNthNodeFromEndofList.cs" />
+    <Compile Include="LinkedList\23_MergekSortedLists.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Arrays\26_RemoveDuplicatesFromSortedArray.cs" />
     <Compile Include="Arrays\80_RemoveDuplicatesFromSortedArray2.cs" />
