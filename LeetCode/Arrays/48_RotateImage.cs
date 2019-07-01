@@ -29,7 +29,47 @@ namespace LeetCode.Arrays
             Rotate(matrix);
         }
 
+
         public void Rotate(int[][] matrix)
+        {
+            if (matrix == null || matrix.Length == 0)
+            {
+                return;
+            }
+
+            // clockwise rotate:      first reverse up to down, then swap the symmetry
+            // anticlockwise rotate : first reverse left to right, then swap the symmetry
+
+            //  1. reverse up to down
+            int start = 0;
+            int end = matrix.Length - 1;
+            while (start < end)
+            {
+                int[] tmp = matrix[start];
+                matrix[start] = matrix[end];
+                matrix[end] = tmp;
+                start++;
+                end--;
+            }
+
+            // 2. swap the symmetry
+            for (int i = 0; i < matrix.Length; ++i) // array
+                for (int j = i + 1; j < matrix.Length; ++j)
+                {
+                    int tmp = matrix[i][j];
+                    matrix[i][j] = matrix[j][i];
+                    matrix[j][i] = tmp;
+                }
+        }
+
+        //private void SwapArrays(int[][] matrix, int a, int b)
+        //{
+        //    int[] tmp = matrix[a];
+        //    matrix[a] = matrix[b];
+        //    matrix[b] = tmp;
+        //}
+
+        public void RotateMy(int[][] matrix)
         {
             if (matrix == null || matrix.Length == 0)
             {
