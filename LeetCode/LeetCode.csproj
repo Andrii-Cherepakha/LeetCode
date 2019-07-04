@@ -55,6 +55,7 @@
     <Compile Include="Arrays\268_FindMissingNumber.cs" />
     <Compile Include="Arrays\136_FindSingleNumber.cs" />
     <Compile Include="Arrays\48_RotateImage.cs" />
+    <Compile Include="Arrays\53_MaximumSubarray.cs" />
     <Compile Include="Integers\9_PalindromeNumberString.cs" />
     <Compile Include="Integers\9_PalindromeNumber.cs" />
     <Compile Include="Integers\9_PalindromeNumberTests.cs" />
