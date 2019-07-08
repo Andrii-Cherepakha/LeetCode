@@ -92,7 +92,7 @@ namespace LeetCode
                     }
 
                     adjacentExists = true;
-                    minDistance = Math.Min(minDistance, Math.Abs(A[p] - A[q]));
+                    minDistance = Math.Min(minDistance, Math.Abs(A[p] - A[q])); // overflow
                 }
             }
 

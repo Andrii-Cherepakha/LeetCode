@@ -57,6 +57,7 @@
     <Compile Include="Arrays\48_RotateImage.cs" />
     <Compile Include="Arrays\53_MaximumSubarray.cs" />
     <Compile Include="Arrays\121_BestTimeToBuyAndSellStock.cs" />
+    <Compile Include="DataStructure\PriorityQueue.cs" />
     <Compile Include="Integers\9_PalindromeNumberString.cs" />
     <Compile Include="Integers\9_PalindromeNumber.cs" />
     <Compile Include="Integers\9_PalindromeNumberTests.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Strings\8_StringToIntegerTests.cs" />
     <Compile Include="Strings\8_StringToIntegerLeetCode.cs" />
     <Compile Include="Strings\389_FindStringDifference.cs" />
+    <Compile Include="Tests\PriorityQueueTests.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesDraft.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesRecursive.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesShift.cs" />
