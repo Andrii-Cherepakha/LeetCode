@@ -25,6 +25,7 @@ namespace LeetCode.Integers
                     break;
                 }
 
+                // skip duplicates
                 if (a > 0 && nums[a] == nums[a - 1])
                 {
                     continue;
