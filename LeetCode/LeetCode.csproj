@@ -71,7 +71,8 @@
     <Compile Include="Integers\15_SumOfTreeNN.cs" />
     <Compile Include="Integers\202_HappyNumber.cs" />
     <Compile Include="Integers\18_SumOfFour.cs" />
-    <Compile Include="JustTest.cs" />
+    <Compile Include="Other\CCISumOfCubes.cs" />
+    <Compile Include="Other\JustTest.cs" />
     <Compile Include="LinkedList\203_RemoveLinkedListElements.cs" />
     <Compile Include="LinkedList\2_AddTwoNumbersSolution.cs" />
     <Compile Include="LinkedList\141_LinkedListCycle.cs" />
@@ -97,7 +98,7 @@
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesTests.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\ICountCompleteTreeNodes.cs" />
     <Compile Include="Trees\TreeNode.cs" />
-    <Compile Include="Vonage.cs" />
+    <Compile Include="Other\Vonage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
