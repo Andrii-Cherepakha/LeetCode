@@ -47,6 +47,31 @@ namespace LeetCode.Arrays
 
         public int MaxProfit(int[] prices)
         {
+            int maxSum = 0;
+            int maxEndingHere = 0;
+            for (int i = 1; i < prices.Length; i++)
+            {
+                int difference = prices[i] - prices[i - 1];
+                maxEndingHere = Math.Max(maxEndingHere + difference, difference);
+                maxSum = Math.Max(maxSum, maxEndingHere);
+            }
+
+            return maxSum;
+        }
+
+        public int MaxProfitLeetCode(int[] prices)
+        {
+            int maxCur = 0, maxSoFar = 0;
+            for (int i = 1; i < prices.Length; i++)
+            {
+                maxCur = Math.Max(0, maxCur += prices[i] - prices[i - 1]);
+                maxSoFar = Math.Max(maxCur, maxSoFar);
+            }
+            return maxSoFar;
+        }
+
+        public int MaxProfitN(int[] prices)
+        {
             if (prices == null || prices.Length == 0)
             {
                 return 0;
