@@ -57,6 +57,7 @@
     <Compile Include="Arrays\48_RotateImage.cs" />
     <Compile Include="Arrays\53_MaximumSubarray.cs" />
     <Compile Include="Arrays\121_BestTimeToBuyAndSellStock.cs" />
+    <Compile Include="DataStructure\BinaryHeapMax.cs" />
     <Compile Include="DataStructure\PriorityQueue.cs" />
     <Compile Include="Integers\9_PalindromeNumberString.cs" />
     <Compile Include="Integers\9_PalindromeNumber.cs" />
