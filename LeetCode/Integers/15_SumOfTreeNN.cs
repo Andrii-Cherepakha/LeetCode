@@ -35,6 +35,14 @@ namespace LeetCode.Integers
                 int end = nums.Length - 1;
                 int reminder = 0 - nums[a];
 
+                // if reminder is out of the range there is no sense to enter the loop
+                // actually there should be nums[start] + nums[start + 1] and nums[end] + nums[end - 1]
+                // but those sum will be definitely greater that double edge value
+                if (reminder < nums[start] * 2 || reminder > nums[end] * 2)
+                {
+                    continue;
+                }
+
                 while (start < end)
                 {
                     if (nums[start] + nums[end] == reminder)
