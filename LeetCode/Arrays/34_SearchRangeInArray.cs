@@ -188,86 +188,39 @@ namespace LeetCode.Arrays
 
         public int[] SearchRange(int[] nums, int target)
         {
-            if (nums == null)
+            if (nums == null || nums.Length == 0)
             {
                 return new[] { -1, -1 };
             }
 
-            int position = BinarySearch(nums, target);
+            int left = BinarySearchToTheLeft(nums, target);
 
-            if (position == -1)
+            if (left == -1)
             {
-                return new[] {-1, -1};
+                return new[] { -1, -1 };
             }
 
-            // start ............... position ................... end
-            // ........... T T T T T T T T T T T T T T T T T ....
-            //                 <--------|-------->
-            int left = BinarySearchToTheLeft(nums, position - 1, target);
-            int right = BinarySearchToTheRight(nums, position + 1, target);
+            int rigth = BinarySearchToTheRigth(nums, target);
 
-            if (left == -1) left = position;
-            if (right == -1) right = position;
-
-            return new[] { left, right };
+            return new[] { left, rigth };
         }
 
-        private int BinarySearchToTheRight(int[] array, int position, int target)
+        private int BinarySearchToTheLeft(int[] array, int target)
         {
-            if (position >= array.Length) return - 1;
-
-            int start = position;
+            int start = 0;
             int end = array.Length - 1;
             bool targetFound = false;
             while (start < end)
             {
-                position = (start + end) / 2;
-                if (array[position] == target)
+                int position = start + (end - start) / 2; // (start + end) / 2;
+                targetFound = targetFound || array[position] == target;
+                if (array[position] < target)
                 {
-                    // all the values to the left are equal to target, need to go to the right
                     start = position + 1;
-                    targetFound = true;
                 }
-
-                if (array[position] != target)
+                else // >=
                 {
-                    // jumped over the border, need to go to the left
                     end = position - 1;
-                }
-            }
-
-            // or end
-            if (array[start] == target) // target found on last step
-            {
-                return start;
-            }
-
-            if (!targetFound) return -1; // target is not present in the range
-
-            return start - 1; // target is present and found recently
-        }
-
-        private int BinarySearchToTheLeft(int[] array, int position, int target)
-        {
-            if (position < 0) return -1;
-
-            int start = 0;
-            int end = position;
-            bool targetFound = false;
-            while (start < end)
-            {
-                position = (start + end) / 2;
-                if (array[position] == target)
-                {
-                    // all the values to the right are equal to target, need to go to the left
-                    end = position - 1;
-                    targetFound = true;
-                }
-
-                if (array[position] != target)
-                {
-                    // jumped over the border, need to go to the right
-                    start = position + 1;
                 }
             }
 
@@ -282,30 +235,34 @@ namespace LeetCode.Arrays
             return start + 1; // target is present and found recently
         }
 
-
-        // returns index of the element or -1
-        private int BinarySearch(int[] array, int value)
+        private int BinarySearchToTheRigth(int[] array, int target)
         {
             int start = 0;
             int end = array.Length - 1;
-            while (start <= end)
+            bool targetFound = false;
+            while (start < end)
             {
-                int position = (start + end) / 2;
-                if (array[position] == value)
-                {
-                    return position;
-                }
-                if (array[position] < value)
-                {
-                    start = position + 1;
-                }
-                if (array[position] > value)
+                int position = start + (end - start) / 2; // (start + end) / 2;
+                targetFound = targetFound || array[position] == target;
+                if (array[position] > target)
                 {
                     end = position - 1;
                 }
+                else // <=
+                {
+                    start = position + 1;
+                }
             }
 
-            return -1;
+            // or end
+            if (array[start] == target) // target found on last step
+            {
+                return start;
+            }
+
+            if (!targetFound) return -1; // target is not present in the range
+
+            return start - 1; // target is present and found recently
         }
     }
 }
