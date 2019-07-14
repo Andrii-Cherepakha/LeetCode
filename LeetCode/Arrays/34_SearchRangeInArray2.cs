@@ -2,16 +2,16 @@
 
 namespace LeetCode.Arrays
 {
-    public class SearchRangeInArray
+    class SearchRangeInArray2
     {
         [Test]
         public void Example1()
         {
-            int[] nums = {5, 7, 7, 8, 8, 10};
+            int[] nums = { 5, 7, 7, 8, 8, 10 };
             int target = 8;
-            int[] expected = {3, 4};
+            int[] expected = { 3, 4 };
             var actual = SearchRange(nums, target);
-            
+
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
             Assert.AreEqual(expected, actual);
@@ -174,9 +174,22 @@ namespace LeetCode.Arrays
         }
 
         [Test]
+        public void TestMiddle2()
+        {
+            int[] nums = { 1, 2, 2, 3, 3, 3, 4, 4, 5, 6 };
+            int target = 3;
+            int[] expected = { 3, 5 };
+            var actual = SearchRange(nums, target);
+
+            ArrayHelper.PrintArray(expected);
+            ArrayHelper.PrintArray(actual);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
         public void TestBegin()
         {
-            int[] nums = { 1 ,2 ,3, 4, 5, 6};
+            int[] nums = { 1, 2, 3, 4, 5, 6 };
             int target = 1;
             int[] expected = { 0, 0 };
             var actual = SearchRange(nums, target);
@@ -199,6 +212,20 @@ namespace LeetCode.Arrays
             Assert.AreEqual(expected, actual);
         }
 
+        [Test]
+        public void TestEnd2()
+        {
+            int[] nums = { 7, 8, 8 };
+            int target = 8;
+            int[] expected = { 1, 2 };
+            var actual = SearchRange(nums, target);
+
+            ArrayHelper.PrintArray(expected);
+            ArrayHelper.PrintArray(actual);
+            Assert.AreEqual(expected, actual);
+        }
+
+
         public int[] SearchRange(int[] nums, int target)
         {
             if (nums == null || nums.Length == 0)
@@ -206,76 +233,38 @@ namespace LeetCode.Arrays
                 return new[] { -1, -1 };
             }
 
-            int left = BinarySearchToTheLeft(nums, target);
+            // find idex where all the elements less or equal to target - 1
+            // and an idex where all the element greater or equal to target + 1
 
-            if (left == -1)
+            int left = BinarySearch(nums, target - 0.5);
+            int right = BinarySearch(nums, target + 0.5);
+
+            if (left == right)
             {
                 return new[] { -1, -1 };
             }
 
-            int rigth = BinarySearchToTheRigth(nums, target);
-
-            return new[] { left, rigth };
+            return new[] { left, right - 1};
         }
 
-        private int BinarySearchToTheLeft(int[] array, int target)
+        private int BinarySearch(int[] nums, double target)
         {
             int start = 0;
-            int end = array.Length - 1;
-            bool targetFound = false;
-            while (start < end)
+            int end = nums.Length - 1;
+            while (start <= end)
             {
-                int position = start + (end - start) / 2; // (start + end) / 2;
-                targetFound = targetFound || array[position] == target;
-                if (array[position] < target)
+                int position = start + (end - start) / 2;
+                if (nums[position] < target)
                 {
                     start = position + 1;
                 }
-                else // >=
+                else
                 {
                     end = position - 1;
                 }
             }
-
-            // or end
-            if (array[start] == target) // target found on last step
-            {
-                return start;
-            }
-
-            if (!targetFound) return -1; // target is not present in the range
-
-            return start + 1; // target is present and found recently
-        }
-
-        private int BinarySearchToTheRigth(int[] array, int target)
-        {
-            int start = 0;
-            int end = array.Length - 1;
-            bool targetFound = false;
-            while (start < end)
-            {
-                int position = start + (end - start) / 2; // (start + end) / 2;
-                targetFound = targetFound || array[position] == target;
-                if (array[position] > target)
-                {
-                    end = position - 1;
-                }
-                else // <=
-                {
-                    start = position + 1;
-                }
-            }
-
-            // or end
-            if (array[start] == target) // target found on last step
-            {
-                return start;
-            }
-
-            if (!targetFound) return -1; // target is not present in the range
-
-            return start - 1; // target is present and found recently
+            
+            return start; // alway return start, not end
         }
     }
 }

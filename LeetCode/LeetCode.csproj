@@ -61,6 +61,7 @@
     <Compile Include="Arrays\448_DisappearedNumbers.cs" />
     <Compile Include="Arrays\442_FindAllDuplicates.cs" />
     <Compile Include="Arrays\34_SearchRangeInArray.cs" />
+    <Compile Include="Arrays\34_SearchRangeInArray2.cs" />
     <Compile Include="DataStructure\BinaryHeapMax.cs" />
     <Compile Include="DataStructure\PriorityQueue.cs" />
     <Compile Include="Integers\9_PalindromeNumberString.cs" />
