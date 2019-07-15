@@ -89,7 +89,7 @@ namespace LeetCode.BinarySearch
         [Test]
         public void Test8()
         {
-            int[] nums = { 4, 5, 6, 7, 0, 1, 2  };
+            int[] nums = { 4, 5, 6, 7, 0, 1, 2 };
             int target = 3;
             int expected = -1;
             Assert.That(Search(nums, target), Is.EqualTo(expected));
@@ -120,6 +120,24 @@ namespace LeetCode.BinarySearch
             int[] nums = { 1, 3 };
             int target = 1;
             int expected = 0;
+            Assert.That(Search(nums, target), Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Test12()
+        {
+            int[] nums = { 5, 1, 3 };
+            int target = 3;
+            int expected = 2;
+            Assert.That(Search(nums, target), Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Test13()
+        {
+            int[] nums = { 4, 5, 6, 7, 8, 1, 2, 3 };
+            int target = 8;
+            int expected = 4;
             Assert.That(Search(nums, target), Is.EqualTo(expected));
         }
 
