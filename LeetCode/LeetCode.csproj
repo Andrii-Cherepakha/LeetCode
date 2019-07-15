@@ -65,6 +65,7 @@
     <Compile Include="BinarySearch\374_GuessNumberSolution.cs" />
     <Compile Include="BinarySearch\35_SearchInsertPosition.cs" />
     <Compile Include="BinarySearch\35_SearchInsertPosition2.cs" />
+    <Compile Include="BinarySearch\33_SearchInRotatedSortedArray.cs" />
     <Compile Include="DataStructure\BinaryHeapMax.cs" />
     <Compile Include="DataStructure\PriorityQueue.cs" />
     <Compile Include="BinarySearch\278_FirstBadRelease.cs" />
