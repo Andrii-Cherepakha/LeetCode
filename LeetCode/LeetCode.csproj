@@ -64,6 +64,7 @@
     <Compile Include="Arrays\34_SearchRangeInArray2.cs" />
     <Compile Include="DataStructure\BinaryHeapMax.cs" />
     <Compile Include="DataStructure\PriorityQueue.cs" />
+    <Compile Include="BinarySearch\278_FirstBadRelease.cs" />
     <Compile Include="Integers\9_PalindromeNumberString.cs" />
     <Compile Include="Integers\9_PalindromeNumber.cs" />
     <Compile Include="Integers\9_PalindromeNumberTests.cs" />
