@@ -2,7 +2,7 @@
 
 namespace LeetCode.BinarySearch
 {
-    public class SearchInRotatedSortedArray2 // NOT SOLVED
+    public class SearchInRotatedSortedArray2 
     {
         [Test]
         public void Example1()
@@ -195,6 +195,22 @@ namespace LeetCode.BinarySearch
         }
 
         public bool Search(int[] nums, int target)
+        {
+            if (nums == null || nums.Length == 0)
+            {
+                return false;
+            }
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == target)
+                    return true;
+            }
+
+            return false;
+        }
+
+            public bool SearchNotSolved(int[] nums, int target)
         {
             if (nums == null || nums.Length == 0)
             {
