@@ -1,4 +1,6 @@
-﻿using NUnit.Framework;
+﻿using System;
+using LeetCode.Arrays;
+using NUnit.Framework;
 
 namespace LeetCode.BinarySearch
 {
@@ -156,6 +158,14 @@ namespace LeetCode.BinarySearch
             Assert.That(FindMin(nums), Is.EqualTo(expected));
         }
 
+        [Test]
+        public void Test17()
+        {
+            int[] nums = { 1, 1, 3, 1 }; // Incorrect pivot
+            int expected = 1;
+            Assert.That(FindMin(nums), Is.EqualTo(expected));
+        }
+
         public int FindMin(int[] nums)
         {
             if (nums == null || nums.Length == 0)
@@ -173,9 +183,9 @@ namespace LeetCode.BinarySearch
                 return nums[0];
             }
 
-            //int pe = FindPivot(nums);
-            //ArrayHelper.PrintArray(nums);
-            //Console.WriteLine($"\nPivot from end   : {nums[pe]} at {pe}");
+            int pe = FindPivot(nums);
+            ArrayHelper.PrintArray(nums);
+            Console.WriteLine($"\nPivot from end   : {nums[pe]} at {pe}");
 
             return nums[FindPivot(nums)];
         }
