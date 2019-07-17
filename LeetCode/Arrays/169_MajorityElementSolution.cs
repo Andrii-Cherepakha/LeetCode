@@ -48,7 +48,8 @@ namespace LeetCode.Arrays
 
         // Boyer-Moore Voting Algorithm  commplexity O(N)
         // https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%BD%D1%81%D1%82%D0%B2%D0%B0_%D0%B3%D0%BE%D0%BB%D0%BE%D1%81%D0%BE%D0%B2_%D0%91%D0%BE%D0%B9%D0%B5%D1%80%D0%B0_%E2%80%94_%D0%9C%D1%83%D1%80%D0%B0
-        public int MajorityElement(int[] nums) // complexity O(N log N)
+        //  always thinking about the pair. 
+        public int MajorityElement(int[] nums) // complexity O(N)
         {
             int majority = int.MinValue;
             int counter = 0;
@@ -64,7 +65,7 @@ namespace LeetCode.Arrays
                 {
                     if (nums[i] == majority)
                         counter++;
-                    else
+                    else //  the code means found a pair.
                         counter--;
                 }
             }
@@ -72,7 +73,7 @@ namespace LeetCode.Arrays
             return majority;
         }
 
-        public int MajorityElementBoyerMooreSimplification(int[] nums) // complexity O(N log N)
+        public int MajorityElementBoyerMooreSimplification(int[] nums) // complexity O(N)
         {
             int majority = int.MinValue;
             int counter = 0;
