@@ -63,6 +63,7 @@
     <Compile Include="Arrays\34_SearchRangeInArray.cs" />
     <Compile Include="Arrays\34_SearchRangeInArray2.cs" />
     <Compile Include="Arrays\169_MajorityElementSolution.cs" />
+    <Compile Include="Arrays\229_MajorityElement2.cs" />
     <Compile Include="BinarySearch\374_GuessNumberSolution.cs" />
     <Compile Include="BinarySearch\35_SearchInsertPosition.cs" />
     <Compile Include="BinarySearch\35_SearchInsertPosition2.cs" />

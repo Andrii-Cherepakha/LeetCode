@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 
 namespace LeetCode.Arrays
 {
@@ -9,7 +10,7 @@ namespace LeetCode.Arrays
         [Test]
         public void Example1()
         {
-            int[] nums = { 3, 2, 3 };
+            int[] nums = {3, 2, 3};
             int expected = 3;
             Assert.That(MajorityElement(nums), Is.EqualTo(expected));
         }
@@ -17,7 +18,7 @@ namespace LeetCode.Arrays
         [Test]
         public void Example2()
         {
-            int[] nums = { 2, 2, 1, 1, 1, 2, 2 };
+            int[] nums = {2, 2, 1, 1, 1, 2, 2};
             int expected = 2;
             Assert.That(MajorityElement(nums), Is.EqualTo(expected));
         }
@@ -25,7 +26,7 @@ namespace LeetCode.Arrays
         [Test]
         public void Test1()
         {
-            int[] nums = { 2, 2, 2, 2 };
+            int[] nums = {2, 2, 2, 2};
             int expected = 2;
             Assert.That(MajorityElement(nums), Is.EqualTo(expected));
         }
@@ -33,7 +34,7 @@ namespace LeetCode.Arrays
         [Test]
         public void Test2()
         {
-            int[] nums = { 2 };
+            int[] nums = {2};
             int expected = 2;
             Assert.That(MajorityElement(nums), Is.EqualTo(expected));
         }
@@ -41,9 +42,34 @@ namespace LeetCode.Arrays
         [Test]
         public void Test3()
         {
-            int[] nums = { 3, 2, 3, 3 };
+            int[] nums = {3, 2, 3, 3};
             int expected = 3;
             Assert.That(MajorityElement(nums), Is.EqualTo(expected));
+        }
+
+        public int MajorityElementCommonApproach(int[] nums) // complexity O(N)
+        {
+            int candidate = 0;
+            int counter = 0;
+
+            foreach (var num in nums)
+            {
+                if (num == candidate)
+                {
+                    counter++;
+                }
+                else if (counter == 0)
+                {
+                    candidate = num;
+                    counter = 1;
+                }
+                else
+                {
+                    counter--;
+                }
+            }
+
+            return candidate;
         }
 
         // Boyer-Moore Voting Algorithm  commplexity O(N)
@@ -84,6 +110,7 @@ namespace LeetCode.Arrays
                 {
                     majority = num;
                 }
+
                 counter += num == majority ? 1 : -1;
             }
 
