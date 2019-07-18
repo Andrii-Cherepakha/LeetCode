@@ -66,6 +66,7 @@
     <Compile Include="Arrays\229_MajorityElement2.cs" />
     <Compile Include="Arrays\167_TwoSum2Ordered.cs" />
     <Compile Include="Arrays\189_RotateArray.cs" />
+    <Compile Include="Arrays\189_RotateArrayLeetCode.cs" />
     <Compile Include="BinarySearch\374_GuessNumberSolution.cs" />
     <Compile Include="BinarySearch\35_SearchInsertPosition.cs" />
     <Compile Include="BinarySearch\35_SearchInsertPosition2.cs" />
