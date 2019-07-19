@@ -68,6 +68,7 @@
     <Compile Include="Arrays\189_RotateArray.cs" />
     <Compile Include="Arrays\189_RotateArrayLeetCode.cs" />
     <Compile Include="Arrays\605_CanPlaceFlowersSolution.cs" />
+    <Compile Include="Arrays\152_MaximumProductSubarray.cs" />
     <Compile Include="BinarySearch\374_GuessNumberSolution.cs" />
     <Compile Include="BinarySearch\35_SearchInsertPosition.cs" />
     <Compile Include="BinarySearch\35_SearchInsertPosition2.cs" />
