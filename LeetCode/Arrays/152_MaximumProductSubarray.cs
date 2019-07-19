@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using NUnit.Framework;
 
 namespace LeetCode.Arrays
@@ -8,7 +9,7 @@ namespace LeetCode.Arrays
         [Test]
         public void Example1()
         {
-            int[] nums = {2, 3, -2, 4};
+            int[] nums = { 2, 3, -2, 4 };
             int expected = 6;
             Assert.That(MaxProduct(nums), Is.EqualTo(expected));
         }
@@ -48,13 +49,40 @@ namespace LeetCode.Arrays
         [Test]
         public void Test4()
         {
-            int[] nums = { -2};
+            int[] nums = { -2 };
             int expected = -2;
             Assert.That(MaxProduct(nums), Is.EqualTo(expected));
         }
-        
-     
+
+
         public int MaxProduct(int[] nums)
+        {
+            if (nums == null || nums.Length == 0)
+            {
+                return int.MinValue;
+            }
+
+            int maxProduct = nums[0];
+            int imax = maxProduct;
+            int imin = maxProduct;
+
+            for (int i = 1; i < nums.Length; i++)
+            {
+                // in adddition to max value-so-far we also keep min  (especially, negative) value-so-far
+                // since once negative value is muliplied by negative value it may become higher than max value-so-far
+                // Also we search for max/main value among three of them since once negative value-so-far is multiplied by negative value
+                // min becomes max and vise versa
+                var candidates = new int[] { nums[i], imax * nums[i], imin * nums[i] };
+                imax = candidates.Max();
+                imin = candidates.Min();
+
+                maxProduct = Math.Max(maxProduct, imax);
+            }
+
+            return maxProduct;
+        }
+
+        public int MaxProductLeetCode(int[] nums)
         {
             if (nums == null || nums.Length == 0)
             {
