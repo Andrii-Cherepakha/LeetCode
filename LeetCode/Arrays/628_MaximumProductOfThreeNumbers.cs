@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Diagnostics.Eventing.Reader;
 
 namespace LeetCode.Arrays
 {

@@ -71,6 +71,7 @@
     <Compile Include="Arrays\152_MaximumProductSubarray.cs" />
     <Compile Include="Arrays\217_ContainsDuplicateSolution.cs" />
     <Compile Include="Arrays\628_MaximumProductOfThreeNumbers.cs" />
+    <Compile Include="Arrays\198_HouseRobber.cs" />
     <Compile Include="BinarySearch\374_GuessNumberSolution.cs" />
     <Compile Include="BinarySearch\35_SearchInsertPosition.cs" />
     <Compile Include="BinarySearch\35_SearchInsertPosition2.cs" />
