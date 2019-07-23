@@ -77,13 +77,6 @@ namespace LeetCode.Arrays
             Assert.That(Rob(nums), Is.EqualTo(expected));
         }
 
-        // A robber has 2 options: a) rob current house i; b) don't rob current house.
-        // If an option "a" is selected it means she can't rob previous i-1 house
-        //      but can safely proceed to the one before previous i-2 and gets all cumulative loot that follows.
-        // If an option "b" is selected the robber gets all the possible loot from robbery of i-1 and all the following buildings.
-
-        // rob(i) = Math.max( rob(i - 2) + currentHouseValue, rob(i - 1) )
-
         public int RobLeetCode(int[] nums)
         {
             if (nums == null || nums.Length == 0)
@@ -109,6 +102,13 @@ namespace LeetCode.Arrays
             return Math.Max(even,odd);
         }
 
+        // A robber has 2 options: a) rob current house i; b) don't rob current house.
+        // If an option "a" is selected it means she can't rob previous i-1 house
+        //      but can safely proceed to the one before previous i-2 and gets all cumulative loot that follows.
+        // If an option "b" is selected the robber gets all the possible loot from robbery of i-1 and all the following buildings.
+
+        // rob(i) = Math.max( rob(i - 2) + currentHouseValue, rob(i - 1) )
+
         public int Rob(int[] nums) // INCORRECT
         {
             if (nums == null || nums.Length == 0)
@@ -116,36 +116,17 @@ namespace LeetCode.Arrays
                 return 0;
             }
 
-            if (nums.Length == 1)
+            int prev1 = 0;
+            int prev2 = 0;
+
+            foreach (var num in nums)
             {
-                return nums[0];
+                int tmp = prev1;
+                prev1 = Math.Max(prev2 + num, prev1);
+                prev2 = tmp;
             }
-
-            if (nums.Length == 2)
-            {
-                return Math.Max(nums[0], nums[1]);
-            }
-
-            int sumEven = nums[0];
-            int sumOdd = nums[1];
-            int maxSum = Math.Max(sumEven, sumOdd);
-
-            for (int i = 2; i < nums.Length; i++)
-            {
-                if (i % 2 == 0) // even position
-                {
-                    sumEven = sumEven + nums[i];
-                    maxSum = Math.Max(maxSum, Math.Max(sumEven, sumOdd - nums[i - 1] + nums[i]));
-                }
-                else // odd position
-                {
-                    sumOdd = sumOdd + nums[i];
-                    maxSum = Math.Max(maxSum, Math.Max(sumEven - nums[i - 1] + nums[i], sumOdd));
-                }
-            }
-
-            //return Math.Max(sumEven, sumOdd);
-            return maxSum;
+            
+            return prev1;
         }
     }
 }
