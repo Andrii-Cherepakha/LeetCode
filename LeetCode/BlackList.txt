@@ -4,3 +4,6 @@
  12 Integer to Roman
  29 Divide Two Integers
 287 Find the Duplicate Number - not easy to understand that need to apply the Cycle detection solution
+
+Subsets, Permutations, Combination Sum, Palindrome Partioning
+https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)

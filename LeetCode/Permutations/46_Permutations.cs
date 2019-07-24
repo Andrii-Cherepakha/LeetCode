@@ -5,6 +5,7 @@ using System.Linq;
 
 namespace LeetCode.Permutations
 {
+    // also works for 47. Permutations II
     class Permutations
     {
         [Test]
@@ -39,6 +40,14 @@ namespace LeetCode.Permutations
             Assert.That(result.Count, Is.EqualTo(24));
         }
 
+        [Test]
+        public void TestDuplicates()
+        {
+            int[] nums = { 2, 1, 2, 1, 2 };
+            var result = Permute(nums);
+            //Assert.That(result.Count, Is.EqualTo(6));
+        }
+
         public IList<IList<int>> Permute(int[] nums)
         {
             var list = new List<IList<int>>();
@@ -59,17 +68,44 @@ namespace LeetCode.Permutations
             return list;
         }
 
-        private bool NextPermutation(int[] nums)
+        private bool NextPermutationLtoR(int[] nums) // from left to right
+        {
+            int k = -1;
+            int l = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if(i < nums.Length - 1 && nums[i] < nums[i+1])
+                {
+                    k = i;
+                }
+                if (k != -1 && nums[k] < nums[i])
+                {
+                    l = i;
+                }
+            }
+
+            if (k == -1)
+            {
+                return false;
+            }
+
+            Swap(nums, k, l);
+            Reverse(nums, k + 1, nums.Length - 1);
+
+            return true;
+        }
+
+        private bool NextPermutation(int[] nums) // from rigth to left 
         {
             int k = nums.Length - 1;
 
-            while (k > 0 && nums[k] <= nums[k-1])
+            while (k > 0 && nums[k] <= nums[k - 1])
             {
                 k--;
             }
             k--;
 
-            if(k < 0)
+            if (k < 0)
             {
                 return false;
             }
@@ -81,7 +117,7 @@ namespace LeetCode.Permutations
             }
 
             Swap(nums, k, l);
-            Reverse(nums, k +1, nums.Length - 1);
+            Reverse(nums, k + 1, nums.Length - 1);
 
             return true;
         }
