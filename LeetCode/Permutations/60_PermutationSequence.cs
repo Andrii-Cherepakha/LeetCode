@@ -24,6 +24,15 @@ namespace LeetCode.Permutations
         }
 
         [Test]
+        public void Example4_14()
+        {
+            int n = 4;
+            int k = 14;
+            string expected = "3142";
+            Assert.That(GetPermutation(n, k), Is.EqualTo(expected));
+        }
+
+        [Test]
         public void Test1()
         {
             int n = 1;
