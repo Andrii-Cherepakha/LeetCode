@@ -3,10 +3,35 @@
 namespace LeetCode.Array2D
 {
     class ValidSudoku
-    {
+    {        
+        public bool IsValidSudoku(char[][] board) // N*N
+        {
+            Dictionary<string, int> storage = new Dictionary<string, int>();
 
+            for (int i = 0; i <= 8; i++)
+                for (int j = 0; j <= 8; j++)
+                {
+                    if (board[i][j] == '.') continue;
 
-        public bool IsValidSudoku(char[][] board)
+                    string row = $"{i}-{board[i][j]}";
+                    if (storage.ContainsKey(row)) return false;
+
+                    string column = $"{j}|{board[i][j]}";
+                    if (storage.ContainsKey(column)) return false;
+
+                    int b = j / 3 + i / 3 * 3;
+                    string box = $"{b}#{board[i][j]}";
+                    if (storage.ContainsKey(box)) return false;
+
+                    storage[row] = 0;
+                    storage[column] = 0;
+                    storage[box] = 0;
+                }
+
+            return true;
+        }
+
+        public bool IsValidSudoku1(char[][] board) // 2 * N*N
         {
             if (!IsValidRange(board, 0, 2, 0, 2)) return false; // 1
             if (!IsValidRange(board, 0, 2, 3, 5)) return false; // 2
@@ -20,7 +45,7 @@ namespace LeetCode.Array2D
             if (!IsValidRange(board, 6, 8, 3, 5)) return false; // 8
             if (!IsValidRange(board, 6, 8, 6, 8)) return false; // 9
 
-            
+
             for (int i = 0; i <= 8; i++)
             {
                 if (!IsValidRange(board, i, i, 0, 8)) return false; // rows
