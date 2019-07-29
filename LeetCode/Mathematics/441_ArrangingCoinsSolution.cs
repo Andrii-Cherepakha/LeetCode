@@ -14,6 +14,10 @@ namespace LeetCode.Mathematics
 
         public int ArrangeCoins(int n)
         {
+            // (x * (x+1)) / 2 = n
+            // x*x + x - 2n = 0
+            // D = b*b - 4ac = 1 + 8n
+            // x = (-b + SQRT(D) ) / 2a = (-1 + SQRT(1 + 8n)) / 2
             return (int)(-1 + System.Math.Sqrt(1 + 8 * (double) n)) / 2;
         }
     }
