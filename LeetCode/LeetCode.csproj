@@ -122,6 +122,7 @@
     <Compile Include="Strings\8_StringToIntegerTests.cs" />
     <Compile Include="Strings\8_StringToIntegerLeetCode.cs" />
     <Compile Include="Strings\389_FindStringDifference.cs" />
+    <Compile Include="Strings\242_ValidAnagram.cs" />
     <Compile Include="Tests\PriorityQueueTests.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesDraft.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesRecursive.cs" />

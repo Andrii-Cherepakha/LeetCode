@@ -80,7 +80,7 @@ namespace LeetCode.Array2D
             Assert.That(Exist(board, word), Is.EqualTo(expected));
         }
 
-        public bool Exist(char[][] board, string word) // time limit
+        public bool Exist(char[][] board, string word) 
         {
             if (board == null || board[0] == null)
             {
