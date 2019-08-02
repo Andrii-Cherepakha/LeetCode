@@ -2,6 +2,28 @@
 {
     public class ReshapeTheMatrix
     {
+        public int[][] MatrixReshapeOneLoop(int[][] nums, int r, int c)
+        {
+            if (nums == null || nums.Length == 0 || nums[0].Length == 0
+                || nums.Length * nums[0].Length != r * c
+                || (nums.Length == r && nums[0].Length == c))
+            {
+                return nums;
+            }
+
+            int[][] newNums = new int[r][];
+            int m = nums[0].Length;
+
+            for (int i = 0; i < r*c; i++)
+            {
+                if(newNums[i / c] == null) newNums[i / c] = new int[c];
+                newNums[i / c][i % c] = nums[i / m][i % m];
+            }
+
+            return newNums;
+        }
+
+
         public int[][] MatrixReshape(int[][] nums, int r, int c)
         {
             if (nums == null || nums.Length == 0 || nums[0].Length == 0
