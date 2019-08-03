@@ -78,6 +78,7 @@
     <Compile Include="Arrays\198_HouseRobber.cs" />
     <Compile Include="Arrays\162_PeakElement.cs" />
     <Compile Include="Arrays\56_MergeIntervals.cs" />
+    <Compile Include="LinkedList\92_ReverseLinkedListII.cs" />
     <Compile Include="Mathematics\441_ArrangingCoinsSolution.cs" />
     <Compile Include="Other\Factorial.cs" />
     <Compile Include="Permutations\31_NextPermutationSolution.cs" />
