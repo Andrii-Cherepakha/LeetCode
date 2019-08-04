@@ -113,6 +113,39 @@ namespace LeetCode.Integers
         {
             StringBuilder str = new StringBuilder(num.ToString());
 
+            int[] rightmost = new int[10]; // store position of last occurance
+
+            for (int i = 0; i < 10; i++)
+            {
+                rightmost[i] = -1;
+            }
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                rightmost[str[i] - '0'] = i;
+            }
+
+            for (int i = 9; i >= 0; i--)
+            {
+                if (rightmost[i] == -1) continue; // no such digit in the number
+                for (int j = 0; j < rightmost[i]; j++) // before position
+                {
+                    if (str[j] < i + '0')
+                    {
+                        str[rightmost[i]] = str[j];
+                        str[j] = (char)(i + '0');
+                        return int.Parse(str.ToString());
+                    }
+                }
+            }
+
+            return num;
+        }
+
+        public int MaximumSwapFirst(int num) // 0 ... 10^8   https://leetcode.com/problems/maximum-swap/
+        {
+            StringBuilder str = new StringBuilder(num.ToString());
+
             int[] leftmost = new int[10]; // store position of first occurance
             int[] rightmost = new int[10]; // store position of last occurance
 
@@ -124,7 +157,7 @@ namespace LeetCode.Integers
 
             for (int i = 0; i < str.Length; i++)
             {
-                rightmost[ str[i] - '0'] = i;
+                rightmost[str[i] - '0'] = i;
                 if (leftmost[str[i] - '0'] == -1)
                 {
                     leftmost[str[i] - '0'] = i;
@@ -137,7 +170,7 @@ namespace LeetCode.Integers
                 int position = rightmost[i];
                 int digit = -1;
 
-                for (int j = 0; j < i; j ++)
+                for (int j = 0; j < i; j++)
                 {
                     if (leftmost[j] == -1) continue; // no such digit in the number
 
