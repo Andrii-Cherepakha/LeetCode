@@ -3,7 +3,42 @@ namespace LeetCode.Array2D
 {
     public class SearchMatrixSolution
     {
-        public bool SearchMatrix(int[][] matrix, int target)
+        public bool SearchMatrix(int[][] matrix, int target) // treat as sorted list
+        {
+            if (matrix == null || matrix.Length == 0 || matrix[0] == null || matrix[0].Length == 0)
+            {
+                return false;
+            }
+
+            int r = matrix.Length;
+            int c = matrix[0].Length;
+
+            int start = 0;
+            int end = r * c - 1;
+
+            while (start <= end)
+            {
+                int position = start + (end - start) / 2;
+                int i = position / c;
+                int j = position % c;
+                if (matrix[i][j] == target)
+                {
+                    return true;
+                }
+                else if (matrix[i][j] > target)
+                {
+                    end = position - 1;
+                }
+                else // < target
+                {
+                    start = position + 1;
+                }
+            }
+
+            return false;
+        }
+
+        public bool SearchMatrix1(int[][] matrix, int target)
         {
             if (matrix == null || matrix.Length == 0 || matrix[0] == null || matrix[0].Length == 0)
             {
