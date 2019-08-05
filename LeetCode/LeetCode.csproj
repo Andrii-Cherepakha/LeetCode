@@ -52,6 +52,7 @@
     <Compile Include="Array2D\566_ReshapeTheMatrix.cs" />
     <Compile Include="Array2D\289_GameOfLife.cs" />
     <Compile Include="Array2D\74_SearchMatrixSolution.cs" />
+    <Compile Include="Array2D\240_SearchMatrix2.cs" />
     <Compile Include="Arrays\ArrayHelper.cs" />
     <Compile Include="Arrays\1_TwoSum.cs" />
     <Compile Include="Arrays\11_ContainerWithMostWater.cs" />
