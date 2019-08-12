@@ -1,6 +1,8 @@
 ﻿using NUnit.Framework;
 using System.Collections.Generic;
 
+// #cycle_detection
+
 namespace LeetCode.LinkedList
 {
     public class LinkedListCycle

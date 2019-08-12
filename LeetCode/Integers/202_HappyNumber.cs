@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 
+// #cycle_detection
+
 namespace LeetCode.Integers
 {
     public class HappyNumber

@@ -1,6 +1,8 @@
 ﻿using NUnit.Framework;
 using System.Collections.Generic;
 
+// #bit
+
 namespace LeetCode.Arrays
 {
     class FindSingleNumber

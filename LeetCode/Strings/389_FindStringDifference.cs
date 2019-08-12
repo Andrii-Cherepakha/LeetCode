@@ -1,5 +1,7 @@
 ﻿using NUnit.Framework;
 
+// #bit
+
 namespace LeetCode.Strings
 {
     class FindStringDifference

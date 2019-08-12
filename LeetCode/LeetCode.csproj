@@ -60,7 +60,7 @@
     <Compile Include="Arrays\287_FindDuplicateNumber.cs" />
     <Compile Include="Arrays\268_FindMissingNumber.cs" />
     <Compile Include="Arrays\136_FindSingleNumber.cs" />
-    <Compile Include="Arrays\48_RotateImage.cs" />
+    <Compile Include="Array2D\48_RotateImage.cs" />
     <Compile Include="Arrays\53_MaximumSubarray.cs" />
     <Compile Include="Arrays\121_BestTimeToBuyAndSellStock.cs" />
     <Compile Include="Arrays\66_PlusOneSolution.cs" />

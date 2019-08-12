@@ -2,6 +2,8 @@
 using System.Linq;
 using NUnit.Framework;
 
+// Boyer-Moore Voting Algorithm
+
 namespace LeetCode.Arrays
 {
     public class MajorityElement2

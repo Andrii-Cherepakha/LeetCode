@@ -1,5 +1,7 @@
 ﻿using NUnit.Framework;
 
+// #binary_search
+
 namespace LeetCode.Arrays
 {
     public class SearchRangeInArray

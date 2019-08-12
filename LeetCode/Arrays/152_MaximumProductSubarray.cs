@@ -2,6 +2,8 @@
 using System.Linq;
 using NUnit.Framework;
 
+// #max_contiguous_subarray #kadanes_algorithm
+
 namespace LeetCode.Arrays
 {
     public class MaximumProductSubarray

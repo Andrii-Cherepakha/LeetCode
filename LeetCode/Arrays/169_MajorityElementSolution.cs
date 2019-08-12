@@ -1,7 +1,8 @@
 ﻿using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
+
+// Boyer-Moore Voting Algorithm
 
 namespace LeetCode.Arrays
 {
