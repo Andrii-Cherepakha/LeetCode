@@ -19,5 +19,17 @@ namespace LeetCode.Arrays
             arr[a] = arr[b];
             arr[b] = temp;
         }
+
+        public static bool IsSorted(int[] arr)
+        {
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i - 1] > arr[i])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
