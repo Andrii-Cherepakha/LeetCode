@@ -88,6 +88,7 @@
     <Compile Include="LinkedList\92_ReverseLinkedListII.cs" />
     <Compile Include="LinkedList\206_ReverseLinkedList.cs" />
     <Compile Include="LinkedList\876_MiddleOfTheLinkedList.cs" />
+    <Compile Include="LinkedList\328_OddEvenLinkedList.cs" />
     <Compile Include="Mathematics\441_ArrangingCoinsSolution.cs" />
     <Compile Include="Other\Factorial.cs" />
     <Compile Include="Permutations\31_NextPermutationSolution.cs" />
