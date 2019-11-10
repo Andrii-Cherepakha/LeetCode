@@ -146,6 +146,7 @@
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesShift.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesTests.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\ICountCompleteTreeNodes.cs" />
+    <Compile Include="Trees\94_InorderTraversal.cs" />
     <Compile Include="Trees\TreeNode.cs" />
     <Compile Include="Other\Vonage.cs" />
     <Compile Include="Trees\TreeTraversal.cs" />
