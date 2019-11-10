@@ -150,6 +150,7 @@
     <Compile Include="Trees\144_PreorderTraversalSolution.cs" />
     <Compile Include="Trees\589_NTreePreorderTraversal.cs" />
     <Compile Include="Trees\429_NTreeLevelOrderTraversal.cs" />
+    <Compile Include="Trees\102_BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="Trees\TreeNode.cs" />
     <Compile Include="Other\Vonage.cs" />
     <Compile Include="Trees\TreeTraversal.cs" />
