@@ -28,7 +28,43 @@ namespace LeetCode.Trees
 
             return 1 + Math.Max(MaxDepthRecursion(root.left), MaxDepthRecursion(root.right));
         }
-        public int MaxDepth(TreeNode root)
+
+        public int MaxDepth(TreeNode root) // pre-order DFT
+        {
+            if (root == null) return 0;
+
+            var stack = new Stack<TreeNode>();
+            var level = new Stack<int>(); // keep track of the level of added node
+            int depth = 0;
+
+            stack.Push(root);
+            level.Push(1);
+
+            while (stack.Count > 0)
+            {
+                var node = stack.Pop();
+                var lvl = level.Pop();
+
+                depth = Math.Max(depth, lvl);
+
+                if (node.left != null)
+                {
+                    stack.Push(node.left);
+                    level.Push(lvl + 1);
+                }
+
+                if (node.right != null)
+                {
+                    stack.Push(node.right);
+                    level.Push(lvl + 1);
+                }
+            }
+
+            return depth;
+        }
+
+
+        public int MaxDepthBft(TreeNode root) // BFT
         {
             if (root == null) return 0;
 
