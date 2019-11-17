@@ -155,6 +155,7 @@
     <Compile Include="Trees\559_MaximumDepthOfNTree.cs" />
     <Compile Include="Trees\111_MinimumDepthOfBinaryTree.cs" />
     <Compile Include="Trees\100_SameTree.cs" />
+    <Compile Include="Trees\101_SymmetricTree.cs" />
     <Compile Include="Trees\TreeNode.cs" />
     <Compile Include="Other\Vonage.cs" />
     <Compile Include="Trees\TreeTraversal.cs" />
