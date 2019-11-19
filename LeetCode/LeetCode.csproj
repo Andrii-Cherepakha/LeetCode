@@ -158,6 +158,7 @@
     <Compile Include="Trees\101_SymmetricTree.cs" />
     <Compile Include="Trees\404_LeftLeavesSum.cs" />
     <Compile Include="Trees\107_BottumUpLevelOrderTraversal.cs" />
+    <Compile Include="Trees\112_PathSum.cs" />
     <Compile Include="Trees\TreeNode.cs" />
     <Compile Include="Other\Vonage.cs" />
     <Compile Include="Trees\TreeTraversal.cs" />
