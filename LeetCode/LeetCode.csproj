@@ -161,6 +161,7 @@
     <Compile Include="Trees\112_PathSum.cs" />
     <Compile Include="Trees\113_PathSumII.cs" />
     <Compile Include="Trees\94_BinaryTreeInorderTraversal.cs" />
+    <Compile Include="Trees\Experiment.cs" />
     <Compile Include="Trees\TreeNode.cs" />
     <Compile Include="Other\Vonage.cs" />
     <Compile Include="Trees\TreeTraversal.cs" />
