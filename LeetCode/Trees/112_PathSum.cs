@@ -59,7 +59,7 @@ namespace LeetCode.Trees
             return false;
         }
 
-            public bool HasPathSumMyRecursion(TreeNode root, int sum)
+        public bool HasPathSumMyRecursion(TreeNode root, int sum)
         {
             if (root == null) return false;
             expectedSum = sum;
@@ -105,7 +105,7 @@ namespace LeetCode.Trees
                     stackSum += current.val;
                     current = current.left;
                 }
-                                
+
                 current = stack.Pop();
 
                 if (current.left == null && current.right == null && stackSum == sum)
@@ -118,7 +118,7 @@ namespace LeetCode.Trees
                 {
                     current = current.right;
                 }
-                else 
+                else
                 {
                     previous = current;
                     stack.Pop();

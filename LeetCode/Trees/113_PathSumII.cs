@@ -38,5 +38,55 @@ namespace LeetCode.Trees
 
             path.RemoveAt(path.Count - 1);        
         }
+
+        public IList<IList<int>> PathSumPreOrder(TreeNode root, int sum)
+        {
+            var result = new List<IList<int>>();
+
+            if (root == null) return result;
+
+            var stack = new Stack<TreeNode>();
+            var sumStack = new Stack<int>();
+            var pathStack = new Stack<List<int>>();
+
+            stack.Push(root);
+            sumStack.Push(root.val);
+            pathStack.Push(new List<int> { root.val });
+
+            while (stack.Count > 0)
+            {
+                var node = stack.Pop();
+                var s = sumStack.Pop();
+                var path = pathStack.Pop();
+
+                // find all root-to-leaf paths where each path's sum equals the given sum.
+                if (node.left == null && node.right == null && s == sum)
+                {
+                    result.Add(new List<int>( path ));
+                }
+
+                if (node.right != null)
+                {
+                    stack.Push(node.right);
+                    sumStack.Push(s + node.right.val);
+
+                    var newPath = new List<int>(path);
+                    newPath.Add(node.right.val);
+                    pathStack.Push(newPath);
+                }
+
+                if (node.left != null)
+                {
+                    stack.Push(node.left);
+                    sumStack.Push(s + node.left.val);
+
+                    var newPath = new List<int>(path);
+                    newPath.Add(node.left.val);
+                    pathStack.Push(newPath);
+                }
+            }
+
+            return result;
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace LeetCode.Trees
         }
 
 
-            public int MinDepthDft(TreeNode root) // DFT
+        public int MinDepthDft(TreeNode root) // DFT
         {
             if (root == null) return 0;
 
@@ -68,7 +68,7 @@ namespace LeetCode.Trees
                     level.Push(lvl + 1);
                 }
             }
-            
+
             return depth;
         }
     }
