@@ -85,6 +85,7 @@
     <Compile Include="Arrays\75_SortColorsSolution.cs" />
     <Compile Include="Arrays\674_LongestContinuousIncreasingSubsequence.cs" />
     <Compile Include="Dynamic\MakeChange.cs" />
+    <Compile Include="Dynamic\SquareSubmatrix.cs" />
     <Compile Include="Integers\670_MaximumSwapSolution.cs" />
     <Compile Include="LinkedList\92_ReverseLinkedListII.cs" />
     <Compile Include="LinkedList\206_ReverseLinkedList.cs" />
