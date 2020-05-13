@@ -93,7 +93,9 @@
     <Compile Include="LinkedList\328_OddEvenLinkedList.cs" />
     <Compile Include="LinkedList\24_SwapNodesInPairs.cs" />
     <Compile Include="Mathematics\441_ArrangingCoinsSolution.cs" />
+    <Compile Include="Other\AsyncAwait.cs" />
     <Compile Include="Other\Factorial.cs" />
+    <Compile Include="Other\Vonage.cs" />
     <Compile Include="Permutations\31_NextPermutationSolution.cs" />
     <Compile Include="BinarySearch\374_GuessNumberSolution.cs" />
     <Compile Include="BinarySearch\35_SearchInsertPosition.cs" />
@@ -166,7 +168,6 @@
     <Compile Include="Trees\Experiment.cs" />
     <Compile Include="Trees\437_PathSumIII.cs" />
     <Compile Include="Trees\TreeNode.cs" />
-    <Compile Include="Other\Vonage.cs" />
     <Compile Include="Trees\TreeTraversal.cs" />
   </ItemGroup>
   <ItemGroup>
