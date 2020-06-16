@@ -95,6 +95,7 @@
     <Compile Include="Mathematics\441_ArrangingCoinsSolution.cs" />
     <Compile Include="Other\AsyncAwait.cs" />
     <Compile Include="Other\Factorial.cs" />
+    <Compile Include="Other\RateDetailBuilder.cs" />
     <Compile Include="Other\Vonage.cs" />
     <Compile Include="Permutations\31_NextPermutationSolution.cs" />
     <Compile Include="BinarySearch\374_GuessNumberSolution.cs" />
