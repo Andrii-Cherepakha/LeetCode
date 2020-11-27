@@ -13,6 +13,7 @@ namespace LeetCode.Codility
             var r1 = Solution(arr, K);
             var r2 = SolutionStackOverflow(arr, K);
             Console.WriteLine($"My solution: {r1} StackOverflow: {r2}");
+            Assert.That(r1, Is.EqualTo(r2));
             Assert.That(r1, Is.EqualTo(5));
         }
 
@@ -24,6 +25,7 @@ namespace LeetCode.Codility
             var r1 = Solution(arr, K);
             var r2 = SolutionStackOverflow(arr, K);
             Console.WriteLine($"My solution: {r1} StackOverflow: {r2}");
+            Assert.That(r1, Is.EqualTo(r2));
             Assert.That(r1, Is.EqualTo(4));
         }
 
@@ -35,6 +37,7 @@ namespace LeetCode.Codility
             var r1 = Solution(arr, K);
             var r2 = SolutionStackOverflow(arr, K);
             Console.WriteLine($"My solution: {r1} StackOverflow: {r2}");
+            Assert.That(r1, Is.EqualTo(r2));
             Assert.That(r1, Is.EqualTo(10));
         }
 
@@ -46,6 +49,7 @@ namespace LeetCode.Codility
             var r1 = Solution(arr, K);
             var r2 = SolutionStackOverflow(arr, K);
             Console.WriteLine($"My solution: {r1} StackOverflow: {r2}");
+            Assert.That(r1, Is.EqualTo(r2));
             Assert.That(r1, Is.EqualTo(7));
         }
 
@@ -57,6 +61,7 @@ namespace LeetCode.Codility
             var r1 = Solution(arr, K);
             var r2 = SolutionStackOverflow(arr, K);
             Console.WriteLine($"My solution: {r1} StackOverflow: {r2}");
+            Assert.That(r1, Is.EqualTo(r2));
             Assert.That(r1, Is.EqualTo(10));
         }
 
@@ -68,6 +73,43 @@ namespace LeetCode.Codility
             var r1 = Solution(arr, K);
             var r2 = SolutionStackOverflow(arr, K);
             Console.WriteLine($"My solution: {r1} StackOverflow: {r2}");
+            Assert.That(r1, Is.EqualTo(r2));
+            Assert.That(r1, Is.EqualTo(10));
+        }
+
+        [Test]
+        public void Test123()
+        {
+            var arr = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int K = 5;
+            var r1 = Solution(arr, K);
+            var r2 = SolutionStackOverflow(arr, K);
+            Console.WriteLine($"My solution: {r1} StackOverflow: {r2}");
+            Assert.That(r1, Is.EqualTo(r2));
+            Assert.That(r1, Is.EqualTo(6));
+        }
+
+        [Test]
+        public void Test1222()
+        {
+            var arr = new[] { 1, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
+            int K = 10;
+            var r1 = Solution(arr, K);
+            var r2 = SolutionStackOverflow(arr, K);
+            Console.WriteLine($"My solution: {r1} StackOverflow: {r2}");
+            Assert.That(r1, Is.EqualTo(r2));
+            Assert.That(r1, Is.EqualTo(10));
+        }
+
+        [Test]
+        public void Test12222()
+        {
+            var arr = new[] { 1, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
+            int K = 9;
+            var r1 = Solution(arr, K);
+            var r2 = SolutionStackOverflow(arr, K);
+            Console.WriteLine($"My solution: {r1} StackOverflow: {r2}");
+            Assert.That(r1, Is.EqualTo(r2));
             Assert.That(r1, Is.EqualTo(10));
         }
 
