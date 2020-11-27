@@ -4,6 +4,8 @@ namespace LeetCode.Codility
 {
     public class PeriodOfString
     {
+        // https://stackoverflow.com/questions/57143272/fix-the-solution-of-binary-period
+
         [Test]
         public void Test1()
         {
