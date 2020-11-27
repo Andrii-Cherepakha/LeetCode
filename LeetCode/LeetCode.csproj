@@ -85,6 +85,7 @@
     <Compile Include="Arrays\75_SortColorsSolution.cs" />
     <Compile Include="Arrays\674_LongestContinuousIncreasingSubsequence.cs" />
     <Compile Include="Codility\HammeredNails.cs" />
+    <Compile Include="Codility\PeriodOfString.cs" />
     <Compile Include="Dynamic\MakeChange.cs" />
     <Compile Include="Dynamic\SquareSubmatrix.cs" />
     <Compile Include="Integers\670_MaximumSwapSolution.cs" />
