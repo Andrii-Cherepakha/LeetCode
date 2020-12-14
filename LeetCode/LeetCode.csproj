@@ -84,6 +84,8 @@
     <Compile Include="Arrays\209_MinimumSizeSubarraySum.cs" />
     <Compile Include="Arrays\75_SortColorsSolution.cs" />
     <Compile Include="Arrays\674_LongestContinuousIncreasingSubsequence.cs" />
+    <Compile Include="Codility\Amazon2.cs" />
+    <Compile Include="Codility\Amazon3.cs" />
     <Compile Include="Codility\HammeredNails.cs" />
     <Compile Include="Codility\PeriodOfString.cs" />
     <Compile Include="Dynamic\MakeChange.cs" />
@@ -169,6 +171,7 @@
     <Compile Include="Trees\112_PathSum.cs" />
     <Compile Include="Trees\113_PathSumII.cs" />
     <Compile Include="Trees\94_BinaryTreeInorderTraversal.cs" />
+    <Compile Include="Trees\98_ValidateBinarySearchTree.cs" />
     <Compile Include="Trees\Experiment.cs" />
     <Compile Include="Trees\437_PathSumIII.cs" />
     <Compile Include="Trees\TreeNode.cs" />
