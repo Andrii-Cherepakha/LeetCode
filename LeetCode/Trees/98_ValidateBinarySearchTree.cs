@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace LeetCode.Trees
 {
@@ -36,5 +37,31 @@ namespace LeetCode.Trees
         }
 
         private TreeNode previous;
+
+        public bool IsValidBSTStack(TreeNode root)
+        {
+            TreeNode current = root;
+            var stack = new Stack<TreeNode>();
+
+            while (current != null || stack.Count > 0)
+            {
+                while (current != null)
+                {
+                    stack.Push(current);
+                    current = current.left;
+                }
+
+                current = stack.Pop();
+
+                if (previous != null && current.val <= previous.val)
+                    return false;
+
+                previous = current;
+
+                current = current.right;
+            }
+
+            return true;
+        }
     }
 }
