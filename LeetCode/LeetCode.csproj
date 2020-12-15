@@ -158,6 +158,7 @@
     <Compile Include="Trees\222_CountCompleteTreeNodes\ICountCompleteTreeNodes.cs" />
     <Compile Include="Trees\235_LowestCommonAncestorBST.cs" />
     <Compile Include="Trees\700_SearchInBinarySearchTree.cs" />
+    <Compile Include="Trees\783_MinimumDistanceBetweenBSTNodes.cs" />
     <Compile Include="Trees\94_InorderTraversal.cs" />
     <Compile Include="Trees\144_PreorderTraversalSolution.cs" />
     <Compile Include="Trees\589_NTreePreorderTraversal.cs" />
