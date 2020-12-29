@@ -144,6 +144,7 @@
     <Compile Include="Arrays\WiggleSortII.cs" />
     <Compile Include="Strings\20_ValidParentheses.cs" />
     <Compile Include="Strings\340_LongestSubstringwithAtMostKDistinctCharacters.cs" />
+    <Compile Include="Strings\344_ReverseString.cs" />
     <Compile Include="Strings\8_StringToInteger.cs" />
     <Compile Include="Strings\8_StringToIntegerTests.cs" />
     <Compile Include="Strings\8_StringToIntegerLeetCode.cs" />
