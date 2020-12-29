@@ -142,6 +142,7 @@
     <Compile Include="Arrays\80_RemoveDuplicatesFromSortedArray2.cs" />
     <Compile Include="Arrays\27_RemoveElement.cs" />
     <Compile Include="Arrays\WiggleSortII.cs" />
+    <Compile Include="Strings\20_ValidParentheses.cs" />
     <Compile Include="Strings\340_LongestSubstringwithAtMostKDistinctCharacters.cs" />
     <Compile Include="Strings\8_StringToInteger.cs" />
     <Compile Include="Strings\8_StringToIntegerTests.cs" />
