@@ -155,6 +155,7 @@
     <Compile Include="Strings\76_MinimumWindowSubstring.cs" />
     <Compile Include="Strings\299_BullsAndCows.cs" />
     <Compile Include="Strings\917_ReverseOnlyLetters.cs" />
+    <Compile Include="Strings\929_UniqueEmailAddresses.cs" />
     <Compile Include="Tests\PriorityQueueTests.cs" />
     <Compile Include="Trees\105_ConstructBinaryTreeFromPreorderandInorderTraversal.cs" />
     <Compile Include="Trees\108_ConvertSortedArrayToBST.cs" />
