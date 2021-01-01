@@ -143,6 +143,7 @@
     <Compile Include="Arrays\27_RemoveElement.cs" />
     <Compile Include="Arrays\WiggleSortII.cs" />
     <Compile Include="Strings\14_LongestCommonPrefix.cs" />
+    <Compile Include="Strings\165_CompareVersionNumbers.cs" />
     <Compile Include="Strings\20_ValidParentheses.cs" />
     <Compile Include="Strings\340_LongestSubstringwithAtMostKDistinctCharacters.cs" />
     <Compile Include="Strings\344_ReverseString.cs" />
