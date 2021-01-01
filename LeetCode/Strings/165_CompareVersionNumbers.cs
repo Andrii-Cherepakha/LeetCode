@@ -6,7 +6,27 @@ namespace LeetCode.Strings
 {
     public class _165_CompareVersionNumbers
     {
-        public int CompareVersion(string version1, string version2)
+        public int CompareVersionSimple(string version1, string version2)
+        {
+            var v1 = version1.Split('.');
+            var v2 = version2.Split('.');
+
+            int length = Math.Max(v1.Length, v2.Length);
+
+            for (int i = 0; i < length; i++)
+            {
+                int i1 = v1.Length > i ? int.Parse(v1[i]) : 0;
+                int i2 = v2.Length > i ? int.Parse(v2[i]) : 0;
+
+                if (i1 < i2) return -1;
+                if (i1 > i2) return 1;
+            }
+
+            return 0;
+        }
+
+
+            public int CompareVersion(string version1, string version2)
         {
             //if (string.IsNullOrEmpty(version1) && string.IsNullOrEmpty(version2)) return 0;
             //if (string.IsNullOrEmpty(version1) && !string.IsNullOrEmpty(version2)) return -1;
