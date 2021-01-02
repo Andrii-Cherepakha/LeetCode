@@ -97,6 +97,7 @@
     <Compile Include="LinkedList\328_OddEvenLinkedList.cs" />
     <Compile Include="LinkedList\24_SwapNodesInPairs.cs" />
     <Compile Include="Mathematics\441_ArrangingCoinsSolution.cs" />
+    <Compile Include="Mathematics\7_ReverseInteger.cs" />
     <Compile Include="Other\AsyncAwait.cs" />
     <Compile Include="Other\Factorial.cs" />
     <Compile Include="Other\RateDetailBuilder.cs" />
