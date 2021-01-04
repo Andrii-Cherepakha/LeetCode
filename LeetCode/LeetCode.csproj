@@ -88,6 +88,7 @@
     <Compile Include="Codility\Amazon3.cs" />
     <Compile Include="Codility\HammeredNails.cs" />
     <Compile Include="Codility\PeriodOfString.cs" />
+    <Compile Include="DataStructure\155_MinStack.cs" />
     <Compile Include="Dynamic\MakeChange.cs" />
     <Compile Include="Dynamic\SquareSubmatrix.cs" />
     <Compile Include="Integers\670_MaximumSwapSolution.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="LinkedList\328_OddEvenLinkedList.cs" />
     <Compile Include="LinkedList\24_SwapNodesInPairs.cs" />
     <Compile Include="Mathematics\441_ArrangingCoinsSolution.cs" />
+    <Compile Include="Mathematics\509_FibonacciNumber.cs" />
     <Compile Include="Mathematics\7_ReverseInteger.cs" />
     <Compile Include="Other\AsyncAwait.cs" />
     <Compile Include="Other\Factorial.cs" />
