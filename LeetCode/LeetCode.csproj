@@ -57,6 +57,7 @@
     <Compile Include="Arrays\1480_RunningSumArray.cs" />
     <Compile Include="Arrays\1491_AverageSalaryExcludingMinimumMaximumSalary.cs" />
     <Compile Include="Arrays\718_MaximumLengthofRepeatedSubarray.cs" />
+    <Compile Include="Arrays\845_LongestMountain.cs" />
     <Compile Include="Arrays\ArrayHelper.cs" />
     <Compile Include="Arrays\1_TwoSum.cs" />
     <Compile Include="Arrays\11_ContainerWithMostWater.cs" />
