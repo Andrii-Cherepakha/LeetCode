@@ -157,6 +157,7 @@
     <Compile Include="Strings\340_LongestSubstringwithAtMostKDistinctCharacters.cs" />
     <Compile Include="Strings\344_ReverseString.cs" />
     <Compile Include="Strings\557_ReverseWordsInStringIII.cs" />
+    <Compile Include="Strings\821_ShortestDistanceToCharacter.cs" />
     <Compile Include="Strings\8_StringToInteger.cs" />
     <Compile Include="Strings\8_StringToIntegerTests.cs" />
     <Compile Include="Strings\8_StringToIntegerLeetCode.cs" />
