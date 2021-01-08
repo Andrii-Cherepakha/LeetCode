@@ -56,6 +56,7 @@
     <Compile Include="Array2D\240_SearchMatrix2.cs" />
     <Compile Include="Arrays\1480_RunningSumArray.cs" />
     <Compile Include="Arrays\1491_AverageSalaryExcludingMinimumMaximumSalary.cs" />
+    <Compile Include="Arrays\215_KthLargestElementinanArray.cs" />
     <Compile Include="Arrays\347_TopKFrequentElements.cs" />
     <Compile Include="Arrays\718_MaximumLengthofRepeatedSubarray.cs" />
     <Compile Include="Arrays\739_DailyTemperatures.cs" />
