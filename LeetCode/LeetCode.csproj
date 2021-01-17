@@ -153,6 +153,7 @@
     <Compile Include="Arrays\80_RemoveDuplicatesFromSortedArray2.cs" />
     <Compile Include="Arrays\27_RemoveElement.cs" />
     <Compile Include="Arrays\WiggleSortII.cs" />
+    <Compile Include="Ranges\632_SmallestRangeCoveringElementsfromKLists.cs" />
     <Compile Include="Strings\14_LongestCommonPrefix.cs" />
     <Compile Include="Strings\165_CompareVersionNumbers.cs" />
     <Compile Include="Strings\168_ExcelSheetColumnTitle.cs" />
