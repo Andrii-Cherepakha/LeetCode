@@ -54,6 +54,7 @@
     <Compile Include="Array2D\289_GameOfLife.cs" />
     <Compile Include="Array2D\74_SearchMatrixSolution.cs" />
     <Compile Include="Array2D\240_SearchMatrix2.cs" />
+    <Compile Include="Array2D\PalindromicPaths.cs" />
     <Compile Include="Arrays\1480_RunningSumArray.cs" />
     <Compile Include="Arrays\1491_AverageSalaryExcludingMinimumMaximumSalary.cs" />
     <Compile Include="Arrays\215_KthLargestElementinanArray.cs" />
