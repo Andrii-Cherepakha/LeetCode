@@ -181,6 +181,7 @@
     <Compile Include="Trees\105_ConstructBinaryTreeFromPreorderandInorderTraversal.cs" />
     <Compile Include="Trees\108_ConvertSortedArrayToBST.cs" />
     <Compile Include="Trees\109_ConvertSortedListToBST.cs" />
+    <Compile Include="Trees\208_ImplementTrie.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesDraft.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesRecursive.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesShift.cs" />
@@ -212,6 +213,7 @@
     <Compile Include="Trees\437_PathSumIII.cs" />
     <Compile Include="Trees\TreeNode.cs" />
     <Compile Include="Trees\TreeTraversal.cs" />
+    <Compile Include="Trees\TrieNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
