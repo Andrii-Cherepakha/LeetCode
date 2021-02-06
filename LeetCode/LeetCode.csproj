@@ -179,6 +179,7 @@
     <Compile Include="Strings\929_UniqueEmailAddresses.cs" />
     <Compile Include="Tests\PriorityQueueTests.cs" />
     <Compile Include="Trees\1022_SumofRootToLeafBinaryNumbers.cs" />
+    <Compile Include="Trees\103_BinaryTreeZigzagLevelOrderTraversal.cs" />
     <Compile Include="Trees\105_ConstructBinaryTreeFromPreorderandInorderTraversal.cs" />
     <Compile Include="Trees\108_ConvertSortedArrayToBST.cs" />
     <Compile Include="Trees\109_ConvertSortedListToBST.cs" />
