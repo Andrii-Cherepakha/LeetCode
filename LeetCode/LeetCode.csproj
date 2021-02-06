@@ -184,6 +184,7 @@
     <Compile Include="Trees\108_ConvertSortedArrayToBST.cs" />
     <Compile Include="Trees\109_ConvertSortedListToBST.cs" />
     <Compile Include="Trees\124_BinaryTreeMaximumPathSum.cs" />
+    <Compile Include="Trees\129_SumRoottoLeafNumbers.cs" />
     <Compile Include="Trees\208_ImplementTrie.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesDraft.cs" />
     <Compile Include="Trees\222_CountCompleteTreeNodes\CountCompleteTreeNodesRecursive.cs" />

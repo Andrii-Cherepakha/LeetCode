@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 
+// similar to 124
+
 namespace LeetCode.Trees
 {
     class _687_LongestUnivaluePath

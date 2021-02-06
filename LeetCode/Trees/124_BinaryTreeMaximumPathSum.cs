@@ -1,5 +1,7 @@
 ﻿using System;
 
+// similar to 687
+
 namespace LeetCode.Trees
 {
     class _124_BinaryTreeMaximumPathSum
