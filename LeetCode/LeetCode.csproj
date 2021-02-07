@@ -165,6 +165,7 @@
     <Compile Include="Strings\168_ExcelSheetColumnTitle.cs" />
     <Compile Include="Strings\171_ExcelSheetColumnNumber.cs" />
     <Compile Include="Strings\20_ValidParentheses.cs" />
+    <Compile Include="Strings\282_ExpressionAddOperators.cs" />
     <Compile Include="Strings\340_LongestSubstringwithAtMostKDistinctCharacters.cs" />
     <Compile Include="Strings\344_ReverseString.cs" />
     <Compile Include="Strings\3_LongestSubstringWithoutRepeatingCharacters.cs" />
