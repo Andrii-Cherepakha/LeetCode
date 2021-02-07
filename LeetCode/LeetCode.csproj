@@ -110,6 +110,7 @@
     <Compile Include="Mathematics\441_ArrangingCoinsSolution.cs" />
     <Compile Include="Mathematics\509_FibonacciNumber.cs" />
     <Compile Include="Mathematics\7_ReverseInteger.cs" />
+    <Compile Include="Other\295_FindMedianfromDataStream.cs" />
     <Compile Include="Other\AsyncAwait.cs" />
     <Compile Include="Other\Factorial.cs" />
     <Compile Include="Other\RateDetailBuilder.cs" />
