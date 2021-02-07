@@ -99,6 +99,9 @@
     <Compile Include="Codility\HammeredNails.cs" />
     <Compile Include="Codility\PeriodOfString.cs" />
     <Compile Include="DataStructure\155_MinStack.cs" />
+    <Compile Include="DataStructure\HeapNode.cs" />
+    <Compile Include="DataStructure\MaxHeap.cs" />
+    <Compile Include="DataStructure\MinHeap.cs" />
     <Compile Include="Dynamic\MakeChange.cs" />
     <Compile Include="Dynamic\SquareSubmatrix.cs" />
     <Compile Include="Integers\670_MaximumSwapSolution.cs" />
