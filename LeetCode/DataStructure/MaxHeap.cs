@@ -75,6 +75,16 @@ namespace LeetCode.DataStructure
             return top;
         }
 
+        public HeapNode Peek()
+        {
+            if (_tail == -1)
+            {
+                throw new IndexOutOfRangeException("Heap is empty");
+            }
+
+            return _arr[0];
+        }
+
         public bool IsEmpty => _tail == -1;
 
         private int GetParent(int i) { return (i - 1) / 2; }
