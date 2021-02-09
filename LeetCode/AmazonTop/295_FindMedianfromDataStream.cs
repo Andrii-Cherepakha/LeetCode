@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace LeetCode.Other
+namespace LeetCode.AmazonTop
 {
     class _295_FindMedianfromDataStream
     {

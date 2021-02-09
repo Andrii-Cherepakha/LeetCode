@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace LeetCode.Other
+namespace LeetCode.AmazonTop
 {
     public class _146_LRUCache
     {
