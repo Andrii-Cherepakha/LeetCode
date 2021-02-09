@@ -115,6 +115,7 @@
     <Compile Include="Mathematics\7_ReverseInteger.cs" />
     <Compile Include="Other\146_LRUCache.cs" />
     <Compile Include="Other\295_FindMedianfromDataStream.cs" />
+    <Compile Include="Other\42_TrappingRainWater.cs" />
     <Compile Include="Other\AsyncAwait.cs" />
     <Compile Include="Other\Factorial.cs" />
     <Compile Include="Other\RateDetailBuilder.cs" />
