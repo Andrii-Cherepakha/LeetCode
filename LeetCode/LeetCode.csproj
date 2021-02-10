@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AmazonTop\200_NumberofIslands.cs" />
+    <Compile Include="AmazonTop\221_MaximalSquare.cs" />
+    <Compile Include="AmazonTop\253_MeetingRoomsII.cs" />
     <Compile Include="AmazonTop\273_IntegertoEnglishWords.cs" />
     <Compile Include="Array2D\1091_ShortestPathinBinaryMatrix.cs" />
     <Compile Include="Array2D\1672_RichestCustomerWealth.cs" />
