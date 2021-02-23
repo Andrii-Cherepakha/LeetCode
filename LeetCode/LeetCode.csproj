@@ -51,9 +51,11 @@
     <Compile Include="AmazonTop\1091_ShortestPathinBinaryMatrix.cs" />
     <Compile Include="AmazonTop\200_NumberofIslands.cs" />
     <Compile Include="AmazonTop\221_MaximalSquare.cs" />
+    <Compile Include="AmazonTop\238_ProductofArrayExceptSelf.cs" />
     <Compile Include="AmazonTop\253_MeetingRoomsII.cs" />
     <Compile Include="AmazonTop\273_IntegertoEnglishWords.cs" />
     <Compile Include="AmazonTop\348_DesignTicTacToe.cs" />
+    <Compile Include="AmazonTop\380_InsertDeleteGetRandom.cs" />
     <Compile Include="AmazonTop\547_NumberofProvinces.cs" />
     <Compile Include="AmazonTop\692_TopKFrequentWords.cs" />
     <Compile Include="AmazonTop\973_KClosestPointstoOrigin.cs" />
