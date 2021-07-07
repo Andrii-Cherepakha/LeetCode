@@ -111,6 +111,7 @@
     <Compile Include="Codility\HammeredNails.cs" />
     <Compile Include="Codility\PeriodOfString.cs" />
     <Compile Include="DataStructure\155_MinStack.cs" />
+    <Compile Include="DataStructure\981_TimeBasedKeyValueStore.cs" />
     <Compile Include="DataStructure\HeapNode.cs" />
     <Compile Include="DataStructure\MaxHeap.cs" />
     <Compile Include="DataStructure\MinHeap.cs" />
