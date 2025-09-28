@@ -12,7 +12,7 @@ namespace LeetCode.Arrays
         {
             int[] nums = { 2, 0, 2, 1, 1, 0 };
             SortColors(nums);
-            Assert.IsTrue(ArrayHelper.IsSorted(nums));
+            Assert.That(ArrayHelper.IsSorted(nums), Is.True);
         }
 
         [Test]
@@ -20,7 +20,7 @@ namespace LeetCode.Arrays
         {
             int[] nums = { 0, 1, 1, 2, 2, 2, 1, 1, 1, 0, 0, 0, 2 };
             SortColors(nums);
-            Assert.IsTrue(ArrayHelper.IsSorted(nums));
+            Assert.That(ArrayHelper.IsSorted(nums), Is.True);
         }
 
         [Test]
@@ -28,7 +28,7 @@ namespace LeetCode.Arrays
         {
             int[] nums = { 1, 1, 2, 2, 2, 1, 1, 1, 2 };
             SortColors(nums);
-            Assert.IsTrue(ArrayHelper.IsSorted(nums));
+            Assert.That(ArrayHelper.IsSorted(nums), Is.True);
         }
 
         [Test]
@@ -36,7 +36,7 @@ namespace LeetCode.Arrays
         {
             int[] nums = { 0 };
             SortColors(nums);
-            Assert.IsTrue(ArrayHelper.IsSorted(nums));
+            Assert.That(ArrayHelper.IsSorted(nums), Is.True );
         }
 
         [Test]
@@ -44,7 +44,7 @@ namespace LeetCode.Arrays
         {
             int[] nums = { 1 };
             SortColors(nums);
-            Assert.IsTrue(ArrayHelper.IsSorted(nums));
+            Assert.That(ArrayHelper.IsSorted(nums), Is.True);
         }
 
         [Test]
@@ -52,7 +52,7 @@ namespace LeetCode.Arrays
         {
             int[] nums = { 2 };
             SortColors(nums);
-            Assert.IsTrue(ArrayHelper.IsSorted(nums));
+            Assert.That(ArrayHelper.IsSorted(nums), Is.True);
         }
 
         [Test]
@@ -60,7 +60,7 @@ namespace LeetCode.Arrays
         {
             int[] nums = { 0, 1, 2 };
             SortColors(nums);
-            Assert.IsTrue(ArrayHelper.IsSorted(nums));
+            Assert.That(ArrayHelper.IsSorted(nums), Is.True);
         }
 
         [Test]
@@ -68,7 +68,7 @@ namespace LeetCode.Arrays
         {
             int[] nums = { 2, 1, 0 };
             SortColors(nums);
-            Assert.IsTrue(ArrayHelper.IsSorted(nums));
+            Assert.That(ArrayHelper.IsSorted(nums), Is.True);
         }
 
         [Test]
@@ -76,7 +76,7 @@ namespace LeetCode.Arrays
         {
             int[] nums = { 2, 0, 1 };
             SortColors(nums);
-            Assert.IsTrue(ArrayHelper.IsSorted(nums));
+            Assert.That(ArrayHelper.IsSorted(nums), Is.True);
         }
 
         [Test]
@@ -84,7 +84,7 @@ namespace LeetCode.Arrays
         {
             int[] nums = { 1, 2, 0 };
             SortColors(nums);
-            Assert.IsTrue(ArrayHelper.IsSorted(nums));
+            Assert.That(ArrayHelper.IsSorted(nums), Is.True);
         }
 
         public void SortColors(int[] nums) // right to left

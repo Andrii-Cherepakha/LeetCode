@@ -16,7 +16,7 @@ namespace LeetCode.Arrays
             
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -29,7 +29,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -42,7 +42,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -55,7 +55,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -68,7 +68,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -81,7 +81,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -94,7 +94,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -107,7 +107,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -120,7 +120,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -133,7 +133,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -146,7 +146,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -159,7 +159,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -172,7 +172,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -185,7 +185,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -198,7 +198,7 @@ namespace LeetCode.Arrays
 
             ArrayHelper.PrintArray(expected);
             ArrayHelper.PrintArray(actual);
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         public int[] SearchRange(int[] nums, int target)
