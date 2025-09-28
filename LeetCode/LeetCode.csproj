@@ -137,6 +137,7 @@
     <Compile Include="Array2D\289_GameOfLife.cs" />
     <Compile Include="Array2D\74_SearchMatrixSolution.cs" />
     <Compile Include="Array2D\240_SearchMatrix2.cs" />
+    <Compile Include="Array2D\289_GameOfLifeSolution2.cs" />
     <Compile Include="Array2D\PalindromicPaths.cs" />
     <Compile Include="Arrays\1480_RunningSumArray.cs" />
     <Compile Include="Arrays\1491_AverageSalaryExcludingMinimumMaximumSalary.cs" />
@@ -185,7 +186,7 @@
     <Compile Include="DataStructure\HeapNode.cs" />
     <Compile Include="DataStructure\MaxHeap.cs" />
     <Compile Include="DataStructure\MinHeap.cs" />
-    <Compile Include="Dropbox\FindDuplicateInFileSystem.cs" />
+    <Compile Include="Dropbox\609_FindDuplicateInFileSystem.cs" />
     <Compile Include="Dynamic\MakeChange.cs" />
     <Compile Include="Dynamic\SquareSubmatrix.cs" />
     <Compile Include="Integers\670_MaximumSwapSolution.cs" />
