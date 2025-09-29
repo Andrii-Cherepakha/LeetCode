@@ -129,6 +129,7 @@
     <Compile Include="AmazonTop\547_NumberofProvinces.cs" />
     <Compile Include="AmazonTop\692_TopKFrequentWords.cs" />
     <Compile Include="AmazonTop\973_KClosestPointstoOrigin.cs" />
+    <Compile Include="AmazonTop\146_LRUCache2.cs" />
     <Compile Include="Array2D\1091_ShortestPathinBinaryMatrix.cs" />
     <Compile Include="Array2D\1672_RichestCustomerWealth.cs" />
     <Compile Include="Array2D\79_WordSearch.cs" />
