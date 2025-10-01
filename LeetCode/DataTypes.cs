@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+﻿
+using NUnit.Framework;
 
 namespace LeetCode
 {
@@ -48,9 +43,17 @@ namespace LeetCode
             set.SetEquals(list);
             set.Clear();
 
-            // PriorityQueue<TElement,TPriority>
-            //var pq = new PriorityQueue<int, int>();
+        }
 
+        [Test]
+        public void testPQ()
+        {
+            // PriorityQueue<TElement,TPriority>
+            var pq = new PriorityQueue<int, int>();
+            int element = 1; int priority = 1;
+            pq.Enqueue(element, priority);
+            pq.Enqueue(element, priority);
+            pq.Dequeue();
         }
     }
 }
