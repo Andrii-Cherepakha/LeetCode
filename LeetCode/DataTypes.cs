@@ -1,0 +1,56 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+namespace LeetCode
+{
+    public class DataTypes
+    {
+        public void Data()
+        {
+            // List<T> Add(T) Remove(T) Find(i => i == 5) Contains(T) Clear()
+            var list = new List<int>();
+            list.Add(5);
+            // list.AddRange();
+            list.Remove(5);
+            list.Find(i => i == 5);
+            list.Contains(5);
+            list.Clear();
+
+            // Dictionary<int, int> Add(key, value) Remove(key) ContainsKey(key) ContainsValue(value) Keys Values Clear()
+            int key = 0; int value = 0;
+            var dict = new Dictionary<int, int>();
+            dict[key] = value;
+            dict.Add(key, value);
+            dict.ContainsKey(key);
+            dict.Remove(key);
+            dict.ContainsValue(value);
+            var keys = dict.Keys;
+            var Values = dict.Values;
+            dict.Clear();
+
+            // HashSet<int> Add(1) Remove(1) Contains(1) Clear()
+            // UnionWith(list) IntersectWith(list) ExceptWith(list)
+            // IsSubsetOf(list) Overlaps(list) SetEquals(list)
+            var set = new HashSet<int>();
+            set.Add(1);
+            set.Remove(1);
+            set.Contains(1);
+            set.UnionWith(list);
+            set.IntersectWith(list);
+            set.ExceptWith(list);
+            set.IsSubsetOf(list);
+            set.Overlaps(list);
+            set.SetEquals(list);
+            set.Clear();
+
+            // PriorityQueue<TElement,TPriority>
+            // var pq = new PriorityQueue<Integer, Integer>();
+
+        }
+    }
+}

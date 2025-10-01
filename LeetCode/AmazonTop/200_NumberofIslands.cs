@@ -1,6 +1,7 @@
 ﻿
 namespace LeetCode.AmazonTop
 {
+    // also can be solved with the Union Find (Disjoint Set Union) approach 
     class _200_NumberofIslands
     {
         public int NumIslands(char[][] grid)

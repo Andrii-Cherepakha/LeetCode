@@ -187,9 +187,14 @@
     <Compile Include="DataStructure\HeapNode.cs" />
     <Compile Include="DataStructure\MaxHeap.cs" />
     <Compile Include="DataStructure\MinHeap.cs" />
+    <Compile Include="DataTypes.cs" />
     <Compile Include="Dropbox\609_FindDuplicateInFileSystem.cs" />
     <Compile Include="Dropbox\2043_SimpleBankSystem.cs" />
     <Compile Include="Dropbox\146_LRUCache.cs" />
+    <Compile Include="Dropbox\290_WordPattern.cs" />
+    <Compile Include="Dropbox\1_TwoSum.cs" />
+    <Compile Include="Dropbox\200_NumIslands.cs" />
+    <Compile Include="Dropbox\1845_SeatReservationManager.cs" />
     <Compile Include="Dynamic\MakeChange.cs" />
     <Compile Include="Dynamic\SquareSubmatrix.cs" />
     <Compile Include="Integers\670_MaximumSwapSolution.cs" />
@@ -318,6 +323,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BlackList.txt" />
+    <Content Include="Dropbox\200_NumIslands.py" />
+    <Content Include="Dropbox\200_NumIslands2.py" />
+    <Content Include="Dropbox\695_MaxAreaOfIsland.py" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
