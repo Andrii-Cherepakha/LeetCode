@@ -49,7 +49,7 @@ namespace LeetCode
             set.Clear();
 
             // PriorityQueue<TElement,TPriority>
-            // var pq = new PriorityQueue<Integer, Integer>();
+            //var pq = new PriorityQueue<int, int>();
 
         }
     }
