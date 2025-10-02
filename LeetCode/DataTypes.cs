@@ -16,7 +16,8 @@ namespace LeetCode
             list.Contains(5);
             list.Clear();
 
-            // LinkedList<T > AddFirst() AddLast() First Last RemoveFirst() RemoveLast()
+            // LinkedList<T> AddFirst() AddLast() First Last RemoveFirst() RemoveLast()
+            // LinkedListNode<T> Previous Next Value
             var ll = new LinkedList<int>();
             ll.AddFirst(1);
             ll.AddLast(1);
@@ -24,6 +25,10 @@ namespace LeetCode
             i = ll.Last;
             ll.RemoveFirst();
             ll.RemoveLast();
+            LinkedListNode<int> n;
+            // n.Previous;
+            var p = ll.First.Previous;
+            var n = ll.First.Next;
 
             // Dictionary<int, int> Add(key, value) Remove(key) ContainsKey(key) ContainsValue(value) Keys Values Clear()
             int key = 0; int value = 0;
@@ -52,6 +57,9 @@ namespace LeetCode
             set.SetEquals(list);
             set.Clear();
 
+            var kvp = KeyValuePair.Create(1, 1);
+            var k = kvp.Key;
+            var v = kvp.Value;
         }
 
         [Test]
