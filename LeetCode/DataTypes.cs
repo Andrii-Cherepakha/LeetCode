@@ -16,6 +16,15 @@ namespace LeetCode
             list.Contains(5);
             list.Clear();
 
+            // LinkedList<T > AddFirst() AddLast() First Last RemoveFirst() RemoveLast()
+            var ll = new LinkedList<int>();
+            ll.AddFirst(1);
+            ll.AddLast(1);
+            var i = ll.First;
+            i = ll.Last;
+            ll.RemoveFirst();
+            ll.RemoveLast();
+
             // Dictionary<int, int> Add(key, value) Remove(key) ContainsKey(key) ContainsValue(value) Keys Values Clear()
             int key = 0; int value = 0;
             var dict = new Dictionary<int, int>();
