@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 using System.Collections.Concurrent;
 using NUnit.Framework;
 
@@ -156,6 +156,15 @@ namespace LeetCode
             cq.Enqueue(1);
             cq.TryPeek(out v);
             cq.TryDequeue(out v);
+        }
+
+        [Test]
+        public void TimeDiff()
+        {
+            //  using System
+            DateTime dt1 = DateTime.Now;
+            DateTime dt2 = DateTime.Now.AddDays(-1);
+            Console.WriteLine(dt1 > dt2);
         }
     }
 }
