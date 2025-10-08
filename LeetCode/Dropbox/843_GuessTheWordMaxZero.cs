@@ -1,6 +1,4 @@
-﻿
-
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using NUnit.Framework.Internal;
 
 namespace LeetCode.Dropbox
@@ -36,6 +34,28 @@ namespace LeetCode.Dropbox
             }
             Console.WriteLine(iterations);
         }
+
+        public void FindSecretWordRecursion(string[] words, Master master)
+        {
+            string guess = GetGuessMaxChar(words);
+            int matches = master.guess(guess);
+            if (matches == 6)
+            {
+                return;
+            }
+            var newCandidates = new List<string>();
+            foreach (var word in words)
+            {
+                if (GetMCount(guess, word) == matches)
+                {
+                    newCandidates.Add(word);
+                }
+            }
+            words = newCandidates.ToArray();
+            FindSecretWordRecursion(words, master);
+        }
+
+
 
         private string GetGuessMaxZero(string[] words)
         {
@@ -196,6 +216,14 @@ namespace LeetCode.Dropbox
             // var master = new Master(words); // mock
             var master = new Master("ccoyyo"); // 11 > 10
             FindSecretWord(words, master);
+        }
+
+        [Test]
+        public void FindSecretWordRecursionTest()
+        {
+            var words = new[] { "xxxxxa", "xxxxxb", "xxxxxc", "xxxxxd" };
+            var master = new Master(words); // mock
+            FindSecretWordRecursion(words, master);
         }
     }
 }
