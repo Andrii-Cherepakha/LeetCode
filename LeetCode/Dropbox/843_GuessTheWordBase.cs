@@ -1,4 +1,6 @@
 ﻿
+using System.Linq;
+
 namespace LeetCode.Dropbox
 {
     public class GuessTheWordBase
@@ -12,6 +14,7 @@ namespace LeetCode.Dropbox
             public Master(string[] words)
             {
                 SelectWord(words);
+                _opponentWords = words.ToList();
             }
 
             public void SelectWord(string[] words)
@@ -44,6 +47,63 @@ namespace LeetCode.Dropbox
                 return positions.ToArray();
             }
 
+            private List<string> _opponentWords;
+
+            public int[] IsSecretContainsCharSabotageWord(char charToGuess, char[] mask, HashSet<char> misses)
+            {
+                var words = GetWordsMatchingMask(_opponentWords, mask, misses);
+
+                List<string> contains = new List<string>();
+                foreach (var word in words)
+                {
+                    if (word.Contains(charToGuess))
+                    {
+                        contains.Add(word);
+                    }
+                }
+
+
+                if (words.Count - contains.Count >= contains.Count)
+                {
+                    return new int[] { }; // NO
+                }
+
+                char[] bestNewMask = new char[mask.Length];
+                int bestSatisfyCount = -1;
+                foreach (var word in contains)
+                {
+                    // new mask with charToGuess
+                    char[] newMask = new char[mask.Length];
+                    mask.CopyTo(newMask, 0);
+                    for (int i=0; i < 6; i++)
+                    {
+                        if (word[i] == charToGuess) newMask[i] = charToGuess;
+                    }
+
+                    // how many words satisfy new mask?
+                    var ww = GetWordsMatchingMask(contains, newMask, misses);
+                    int satisfyCount = ww.Count;
+                    if (satisfyCount > bestSatisfyCount)
+                    {
+                        bestSatisfyCount = satisfyCount;
+                        newMask.CopyTo(bestNewMask, 0);                        
+                    }
+                }
+
+                // return
+                var positions = new List<int>();
+                for (int i = 0; i < 6; i++)
+                {
+                    if (bestNewMask[i].Equals(charToGuess))
+                    {
+                        positions.Add(i);
+                    }
+                }
+
+                return positions.ToArray();
+            }
+
+            /*
             public int[] IsSecretContainsCharSabotageLetter(char c, string[] words, char[] mask, HashSet<char> misses)
             {
                 var positions = new List<int>();
@@ -107,6 +167,7 @@ namespace LeetCode.Dropbox
                 return positions.ToArray();
             }
 
+
             private char GetLeastFrequientChar(string[] words, char[] mask, HashSet<char> misses)
             {
                 var dict = new Dictionary<char, int>();
@@ -135,6 +196,7 @@ namespace LeetCode.Dropbox
 
                 return c;
             }
+            */
         }
 
         public static int GetMatchCount(string word1, string word2)
@@ -146,6 +208,22 @@ namespace LeetCode.Dropbox
                     matches++;
             }
             return matches;
+        }
+
+        public static List<string> GetWordsMatchingMask(List<string> words, char[] mask, HashSet<char> misses)
+        {
+            var result = new List<string>();
+            foreach (var word in words)
+            {
+                bool match = true;
+                for (int i=0; i < 6; i++)
+                {
+                    match = match && (mask[i] == ' ' || word[i] == mask[i]) && !misses.Contains(word[i]);
+                    if (!match) break;
+                }
+                if (match) result.Add(word);
+            }
+            return result;
         }
     }
 }
