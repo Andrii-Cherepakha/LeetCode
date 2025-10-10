@@ -5,9 +5,14 @@ namespace LeetCode.Dropbox
     {
         public class Master
         {
-            public readonly string secret;
+            public string secret;
 
             public Master(string[] words)
+            {
+                SelectWord(words);
+            }
+
+            public void SelectWord(string[] words)
             {
                 Random rnd = new Random();
                 int i = rnd.Next(words.Length);
@@ -22,6 +27,19 @@ namespace LeetCode.Dropbox
             public int guess(string word)
             {
                 return GetMatchCount(secret, word);
+            }
+
+            public int[] IsSecretContainsChar(char c)
+            {
+                var positions = new List<int>();
+                for (int i = 0; i < secret.Length; i++)
+                {
+                    if (secret[i] == c)
+                    {
+                        positions.Add(i);
+                    }
+                }
+                return positions.ToArray();
             }
         }
 
