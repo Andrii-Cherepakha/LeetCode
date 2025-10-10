@@ -10,15 +10,26 @@ namespace LeetCode.Dropbox
             HashSet<char> misses = new HashSet<char>();
             HashSet<char> guessed = new HashSet<char>(); // in mask
             char[] mask = new char[] { ' ', ' ', ' ', ' ', ' ', ' ' };
-            FindSecretWord(words, master, misses, guessed, mask);
+            int iterations = 0;
+            FindSecretWord(words, master, misses, guessed, mask, iterations);
         }
 
-        public void FindSecretWord(string[] words, Master master, HashSet<char> misses, HashSet<char> guessed, char[] mask)
+        public void FindSecretWord(string[] words, Master master, HashSet<char> misses, HashSet<char> guessed, char[] mask, int iterations)
         {
+            iterations++;
             var secret = master.secret;
             var charToGuess = GetMostFrequientChar(words, mask, misses);
-            if (charToGuess == ' ') return;         
-            var positions = master.IsSecretContainsChar(charToGuess);
+            if (charToGuess == ' ')
+            {
+                // should never happen
+                Console.WriteLine(master.secret);
+                Console.WriteLine(iterations);
+                Console.WriteLine(string.Join("", mask));
+                Console.WriteLine(string.Join(",", misses));
+                return;
+            } 
+            // var positions = master.IsSecretContainsChar(charToGuess);
+            var positions = master.IsSecretContainsCharSabotageLetter(charToGuess, words, mask, misses);
             if (positions.Length == 0)
             {
                 misses.Add(charToGuess);
@@ -48,11 +59,12 @@ namespace LeetCode.Dropbox
                 words = newWords.ToArray();
                 if (words.Length == 1)
                 {
-                    Console.WriteLine("Secret is " + words[0]);
+                    Console.WriteLine("Mastre secret is " + master.secret);
+                    Console.WriteLine("Secret is " + words[0] + " number of guesses: " + iterations);
                     return;
                 }
             }
-            FindSecretWord(words, master, misses, guessed, mask);
+            FindSecretWord(words, master, misses, guessed, mask, iterations);
         }
 
         private char GetMostFrequientChar(string[] words, char[] mask, HashSet<char> misses)
