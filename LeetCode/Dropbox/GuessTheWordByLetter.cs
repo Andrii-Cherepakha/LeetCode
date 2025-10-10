@@ -145,5 +145,14 @@ namespace LeetCode.Dropbox
             Console.WriteLine("Master secret: " + master.secret);
             FindSecretWord(words, master);
         }
+
+        [Test]
+        public void Test3_similar2()
+        {
+            var words = new[] { "qwerty", "qwertu", "qwerti", "qwerto", "qwertp", "qwerta", "qwerts", "qwertd", "qwertf", "qwertg", "qwerth", "qwertj", "qwertk", "qwertl" };
+            var master = new Master(words); // mock
+            Console.WriteLine("Master secret: " + master.secret);
+            FindSecretWord(words, master);
+        }
     }
 }
